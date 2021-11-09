@@ -1,0 +1,18 @@
+.share{
+    background-color: rgb(49,114,232);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+    border-radius: 30px;
+    padding: 8px 10px;
+}
+
+.shareFriends{
+    border-right: 0.5px solid white;
+    padding-right: 10px;
+}
+
+.icon{
+    width: 50px;
+}

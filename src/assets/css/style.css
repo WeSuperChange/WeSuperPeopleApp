@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Fira Sans Light";
+  src: url("./src/assets/fonts/FiraSans-Light.ttf");
+}
+@font-face {
+  font-family: "Fira Sans Regular";
+  src: url("./src/assets/fonts/FiraSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Fira Sans Bold";
+  src: url("./src/assets/fonts/FiraSans-Bold.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fira Sans Regular", sans-serif;
+}
