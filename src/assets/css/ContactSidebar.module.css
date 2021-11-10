@@ -1,0 +1,29 @@
+.contactsidebar {
+    background-color: #3dd7ac;
+    display: inline-flex;
+    flex-direction: column-reverse;
+    width: 2.5vw;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    min-width: 30px;
+    height: 99.5vh;
+    color: red;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.pfeile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5d3ede;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    color: white;
+    height: 40px;
+    width: 100%;
+    font-size: 1.25rem;
+}

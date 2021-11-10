@@ -1,9 +1,11 @@
 import React from "react";
+import "../assets/css/style.css";
+import styles from "../assets/css/ContactSidebar.module.css";
 
 const ContactSidebar = () => {
     return (
-        <div>
-            <p>{">>"}</p>
+        <div className={styles.contactsidebar}>
+            <p className={styles.pfeile}>{">>"}</p>
         </div>
     );
 };

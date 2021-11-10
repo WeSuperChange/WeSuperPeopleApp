@@ -1,0 +1,174 @@
+.parent {
+    background: #041e37 bottom right/contain no-repeat url("../img/erde_1.png");
+    color: #3ed7ad;
+    display: flex;
+    align-items: center;
+}
+
+.mainsectionleft {
+    display: inline-block;
+    margin: 0 2.5vw;
+    width: 60vw;
+}
+
+.mainsectionright {
+    display: inline-block;
+    width: 30vw;
+}
+
+.logo {
+    width: 65px;
+}
+
+.h1 {
+    font-size: 70px;
+    color: #041e37;
+    -webkit-text-stroke: 2px #3ed7ad;
+}
+
+.h2 {
+    font-size: 50px;
+    overflow-wrap: break-word;
+}
+
+.p {
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    padding: 10vh 0;
+}
+
+.buttonblue {
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 7.5px 20px;
+    background-color: #057df6;
+    color: #3ed7ad;
+    border: 2px solid #3ed7ad;
+    letter-spacing: 0.2rem;
+}
+
+.buttongreen {
+    text-decoration: none;
+    padding: 9.5px 20px;
+    background-color: #3ed7ad;
+    color: #057df6;
+    letter-spacing: 0.2rem;
+}
+
+@media only screen and (max-width: 974px) {
+    .h1 {
+        font-size: 65px;
+    }
+
+    .h2 {
+        font-size: 45px;
+        overflow-wrap: break-word;
+    }
+
+    .p {
+        font-size: 20px;
+        padding: 10vh 0;
+    }
+}
+
+@media only screen and (max-width: 935px) {
+    .h1 {
+        font-size: 65px;
+    }
+
+    .h2 {
+        font-size: 40px;
+        overflow-wrap: break-word;
+    }
+
+    .p {
+        font-size: 20px;
+        padding: 10vh 0;
+    }
+}
+
+@media only screen and (max-width: 749px) {
+    .parent {
+        flex-wrap: wrap;
+        /* justify-content: center; */
+    }
+
+    .mainsectionleft {
+        display: block;
+        margin: 0 0 2.5vw 0;
+        padding-left: 30px;
+        width: 85vw;
+    }
+
+    .mainsectionright {
+        display: block;
+        /* margin: 0 0 2.5vw 0; */
+        width: 80vw;
+        padding-left: 60px;
+    }
+}
+
+@media only screen and (max-width: 529px) {
+    .h1 {
+        font-size: 60px;
+    }
+
+    .h2 {
+        font-size: 25px;
+        overflow-wrap: break-word;
+    }
+
+    .p {
+        font-size: 18px;
+        padding: 10vh 0;
+    }
+
+    .mainsectionleft {
+        display: block;
+        padding-left: 10px;
+    }
+
+    .mainsectionright {
+        display: block;
+        padding-left: 60px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .h1 {
+        font-size: 50px;
+    }
+
+    .h2 {
+        font-size: 21px;
+        overflow-wrap: break-word;
+    }
+
+    .p {
+        font-size: 16px;
+        padding: 10vh 0;
+    }
+
+    .mainsectionleft {
+        display: block;
+        padding-left: 10px;
+    }
+
+    .mainsectionright {
+        display: block;
+        padding-left: 60px;
+    }
+
+    .buttonblue {
+        display: block;
+        text-align: center;
+        margin: 5px 20px;
+    }
+
+    .buttongreen {
+        display: block;
+        margin: 5px 20px;
+        text-align: center;
+    }
+}
