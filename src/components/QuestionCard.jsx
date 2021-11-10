@@ -1,4 +1,6 @@
 import React from "react";
+import "../assets/css/style.css";
+import styles from "../assets/css/QuestionCard.module.css";
 
 const QuestionCard = () => {
     return (

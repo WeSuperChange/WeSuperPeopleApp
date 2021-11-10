@@ -7,17 +7,17 @@ import { Link } from "react-router-dom";
 
 export const Letsgo = () => {
     return (
-        <div>
+        <div className={styles.allLetsgo}>
             {/* <ContactSidebar /> */}
             <img src="./img/logo_1.png" alt="" className={styles.logo} />
             <div className={styles.letsgo}>
-                <h1>Los geht´s</h1>
-                <p>
+                <h1 className={styles.los}>Los <span className={styles.geht}>geht´s</span></h1>
+                <p className={styles.hi}>
                     Hi, jetzt gleich erwarten dich ein paar Fragen zu interessanten Themen. Bitte nimm dir genug Zeit alle Frage in Ruhe und vollständig auszufüllen. Bist du bereit um deine Gedanken mit der Community zu teilen?!
                 </p>
-                <h3>Do You Believe the climate is changing</h3>
-                <div>
-                    <Link to="/question">
+                <h3 className={styles.doYou}>Do You Believe the climate is changing</h3>
+                <div className={styles.startEnter}>
+                    <Link to="/question" className={styles.start}>
                         Start
                     </Link>
                     <p>press Enter</p>

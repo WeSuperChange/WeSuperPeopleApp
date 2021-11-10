@@ -1,0 +1,20 @@
+/* gesamte Seite */
+.allQuestion{
+        background:
+        50% 50%/contain no-repeat url("../img/LillaVector2.png"),
+        right center/contain no-repeat url("../img/erde_2.png");
+        background-color: #041e37;
+        height: 100vh;
+}
+
+.allVoices{
+    width: 24vw;
+    margin-left: 8vw;
+    font-size: 45px;
+    color: #3ed7ad;
+    margin-top: 2vh; 
+}
+.webStroke{
+    -webkit-text-stroke: 2px #3ed7ad;
+    color: #041e37;
+}

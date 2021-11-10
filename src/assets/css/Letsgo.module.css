@@ -1,9 +1,51 @@
-.logo{
-    width: 65px;
+/* gesamte Seite */
+.allLetsgo{
+    background: #041e37 bottom center/contain no-repeat url("../img/LillaVector1.png");
+    height: 100vh;
 }
 
+.logo{
+    width: 65px;
+    margin-top: 2vh;
+    margin-left: 10vw;
+}
+
+/* gesamter Textblock */
 .letsgo{
     text-align: center;
     width: 37vw;
     margin: 0 auto;
+    margin-top: 10vh;
+    color: #3ed7ad; 
+}
+
+.los{
+    margin-bottom: 3vh;
+}
+
+.geht{
+    color: #041e37;
+    -webkit-text-stroke: 2px #3ed7ad;
+}
+
+.hi{
+    margin-bottom: 5vh;
+}
+
+.doYou{
+    margin-bottom: 5vh;
+}
+
+/* Start und pressEnter */
+.startEnter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start{
+    background-color: #3ed7ad;
+    padding: 5px 15px;
+    margin-right: 15px;
+    color: #5D3EDE;
 }
