@@ -9,7 +9,6 @@ const Home = () => {
     return (
         <div className={styles.parent}>
             <ContactSidebar />
-            {/* <div> */}
             <section className={styles.mainsectionleft}>
                 <img
                     src="./img/logo_1.png"
@@ -23,18 +22,17 @@ const Home = () => {
                 <p className={styles.p}>
                     Opensource für Privatpersonen zum Gedankenaustausch.
                 </p>
-                <Link to="/" className={styles.buttonblue}>
+                <Link to="/login" className={styles.buttonblue}>
                     LOG IN
                 </Link>
 
-                <Link to="/" className={styles.buttongreen}>
+                <Link to="/letsgo" className={styles.buttongreen}>
                     LOS GEHTS
                 </Link>
             </section>
             <section className={styles.mainsectionright}>
                 <PollCollection />
             </section>
-            {/* </div> */}
         </div>
     );
 };
