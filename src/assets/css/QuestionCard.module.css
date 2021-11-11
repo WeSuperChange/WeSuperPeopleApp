@@ -1,0 +1,37 @@
+/* Schrift für die Fragen und Antworten (Fabi) */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+/* Schrift funktioniert nicht */
+
+.allQuestionCard{
+    margin-top: 24vh;
+    padding: 5vh 5vw;
+    color: white;
+    margin-left: 14vw;
+    background-color: #001728
+    /* font-family: "Montserrat", sans-serif; */
+}
+
+.question{
+    font-size: 30px;
+    margin-bottom: 5vh;
+}
+
+.answers{
+    border: 2px solid #057DF6;
+}
+
+.answerOne{
+    border-bottom: 1px solid #057DF6;
+    padding: 5px 0px 10px 15px;
+}
+
+.answerTwo{
+    border-bottom: 1px solid #057DF6;
+    padding: 5px 0px 10px 15px;
+}
+
+.answerThree{
+    padding: 5px 0px 10px 15px;
+}
+
+/* Todo: border color => transparancy */

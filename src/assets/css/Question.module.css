@@ -1,10 +1,11 @@
 /* gesamte Seite */
 .allQuestion{
-        background:
-        50% 50%/contain no-repeat url("../img/LillaVector2.png"),
-        right center/contain no-repeat url("../img/erde_2.png");
-        background-color: #041e37;
-        height: 100vh;
+    background:
+    -14rem 8rem no-repeat url("../img/LillaVector2.png"),
+    right center/contain no-repeat url("../img/erde_2.png");
+    background-color: #041e37;
+    height: 100vh;
+    display: flex;
 }
 
 .allVoices{
