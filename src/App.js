@@ -14,6 +14,7 @@ import Question from "./pages/Question"
 import PollThanks from "./pages/PollThanks";
 import Results from "./pages/Results";
 import HomePoll from "./pages/HomePoll";
+import ErrorPage from "./pages/Error";
 
 function App() {
     return (
@@ -31,6 +32,8 @@ function App() {
                 <Route path="/question" element={<Question />} />
                 <Route path="/poll_thanks" element={<PollThanks />} />
                 <Route path="/Results" element={<Results />} />
+
+                <Route path="/err404" element={<ErrorPage />} />
             </Routes>
         </Router>
     );
