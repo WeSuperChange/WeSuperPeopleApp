@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const OwnPoll = () => {
+export default function OwnPoll() {
     return (
         <div>
             <h1>OwnPoll</h1>

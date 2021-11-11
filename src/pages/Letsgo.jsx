@@ -5,7 +5,7 @@ import styles from "../assets/css/Letsgo.module.css";
 import { Link } from "react-router-dom";
 
 
-export const Letsgo = () => {
+export default function Letsgo() {
     return (
         <div className={styles.allLetsgo}>
             {/* <ContactSidebar /> */}

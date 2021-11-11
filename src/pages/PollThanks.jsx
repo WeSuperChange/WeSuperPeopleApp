@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const PollThanks = () => {
+export default function PollThanks() {
     return (
         <div>
             <h1>PollThanks</h1>

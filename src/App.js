@@ -4,19 +4,20 @@ import {
     BrowserRouter as Router, Routes, Route
 } from "react-router-dom";
 import Home from "./pages/Home";
-import { Login } from "./pages/Login";
-import { Letsgo } from "./pages/Letsgo";
-import { Contact } from "./pages/Contact";
+import Login from "./pages/Login";
+import Letsgo from "./pages/Letsgo";
+import Contact from "./pages/Contact";
 import ContactThanks from "./pages/ContactThanks";
-import { NewPoll } from "./pages/NewPoll";
-import { OwnPoll } from "./pages/OwnPoll";
+import NewPoll from "./pages/NewPoll";
+import OwnPoll from "./pages/OwnPoll";
 import Question from "./pages/Question"
-import { PollThanks } from "./pages/PollThanks";
+import PollThanks from "./pages/PollThanks";
 import Results from "./pages/Results";
-import { HomePoll } from "./pages/HomePoll";
+import HomePoll from "./pages/HomePoll";
 
 function App() {
     return (
+        //Routing - ToDo: Handle auth users
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} exact />

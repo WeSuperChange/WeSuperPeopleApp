@@ -1,7 +1,7 @@
 import React from 'react'
 import "../assets/css/Contact.css"
 
-export const Contact = () => {
+export default function Contact() {
     return (
         <section>
             <img src="/img/logo_1.png" alt="We Super People Logo" />
