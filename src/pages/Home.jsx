@@ -8,7 +8,9 @@ import { Link } from "react-router-dom";
 const Home = () => {
     return (
         <div className={styles.parent}>
+            {/* Home - Todo: Sidebar will be moved to app.js */}
             <ContactSidebar />
+            {/* ============================== Start of left Area ================================= */}
             <section className={styles.mainsectionleft}>
                 <img
                     src="./img/logo_1.png"
@@ -29,6 +31,7 @@ const Home = () => {
                     Los gehts
                 </Link>
             </section>
+            {/* ============================== Start of right Area ================================= */}
             <section className={styles.mainsectionright}>
                 <PollCollection />
             </section>

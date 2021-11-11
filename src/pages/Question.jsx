@@ -8,7 +8,9 @@ const Question = () => {
     return (
         <div className={styles.allQuestion}>
             <div>
+                {/* Question - ToDo: Sidebar goes to app.js */}
                 <SuperPeople />
+                {/* ============================== Start of left Area ================================= */}
                 <h2 className={styles.allVoices}>
                     <span className={styles.webStroke}>
                         All voices should be heard.&nbsp;
@@ -17,6 +19,7 @@ const Question = () => {
 
                 </h2>
             </div>
+            {/* ============================== Start of right Area ================================= */}
             <div>
                 <QuestionCard />
             </div>
