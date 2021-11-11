@@ -2,8 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
 import './index.css';
+import './assets/fonts/FiraSans-Bold.ttf';
+import './assets/fonts/FiraSans-Light.ttf';
+import './assets/fonts/FiraSans-Regular.ttf';
+import './assets/fonts/Montserrat-Medium.ttf';
+import './assets/fonts/Montserrat-SemiBold.ttf';
 
 ReactDOM.render(
     <React.StrictMode>

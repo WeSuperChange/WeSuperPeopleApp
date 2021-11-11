@@ -12,7 +12,7 @@ const QuestionCard = () => {
                 <h4 className={styles.answerTwo}>The climate is changing?</h4>
                 <h4 className={styles.answerThree}>No</h4>
             </div>
-            {/* Skipp zur nächsten Frage */}
+            {/* Skip zur nächsten Frage */}
             <Link to="/question">
                 SKIP {">>"}
             </Link>
