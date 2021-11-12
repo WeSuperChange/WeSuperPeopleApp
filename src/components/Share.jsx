@@ -1,5 +1,5 @@
-import styles from '../assets/css/Share.module.css';
 import React from "react";
+import styles from '../assets/css/Share.module.css';
 import { Link } from "react-router-dom";
 
 const Share = () => {
@@ -23,10 +23,3 @@ const Share = () => {
 };
 
 export default Share;
-
-// 'Link' is not defined Failed to compile
-
-// Bsp.
-// <Link to="https://github.com/Joeyryanbridges">
-//     <Image src="giticon.png" className="githubIcon" />
-// </Link>
