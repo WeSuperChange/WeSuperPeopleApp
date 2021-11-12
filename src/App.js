@@ -22,18 +22,17 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} exact />
-                <Route path="/login" element={<Login />} />
-                <Route path="/letsgo" element={<Letsgo />} />
+                <Route path="/login" element={<Login />} exact />
+                <Route path="/letsgo" element={<Letsgo />} exact />
                 <Route path="/contact" element={<Contact />} exact />
-                <Route path="/contact_thanks" element={<ContactThanks />} />
-                <Route path="/home_poll" element={<HomePoll />} />
-                <Route path="/new_poll" element={<NewPoll />} />
-                <Route path="/own_poll" element={<OwnPoll />} />
-                <Route path="/question" element={<Question />} />
-                <Route path="/poll_thanks" element={<PollThanks />} />
-                <Route path="/Results" element={<Results />} />
-
-                <Route path="/err404" element={<ErrorPage />} />
+                <Route path="/contact_thanks" element={<ContactThanks />} exact />
+                <Route path="/home_poll" element={<HomePoll />} exact />
+                <Route path="/new_poll" element={<NewPoll />} exact />
+                <Route path="/own_poll" element={<OwnPoll />} exact />
+                <Route path="/question" element={<Question />} exact />
+                <Route path="/poll_thanks" element={<PollThanks exact />} />
+                <Route path="/Results" element={<Results />} exact />
+                <Route path="*" element={<ErrorPage />} />
             </Routes>
         </Router>
     );
