@@ -47,7 +47,11 @@ export default function Contact() {
             <div className="contentArea">
                 {/* ============================== Start of left Area ================================= */}
                 <div className="leftArea">
-                    <img src="/img/logo_1.png" alt="We Super People Logo" />
+                    <img
+                        src="/img/logo_1.png"
+                        alt="We Super People Logo"
+                        className="logoContact"
+                    />
 
                     <div className="leftAreaText">
                         <h1>
