@@ -3,11 +3,12 @@
     color: #3ed7ad;
     display: flex;
     align-items: center;
+    height: 100vh;
 }
 
 .mainsectionleft {
     display: inline-block;
-    margin: 0 2.5vw;
+    margin: 0 10vw 0 5vw;
     width: 60vw;
 }
 
@@ -97,7 +98,7 @@
     .mainsectionleft {
         display: block;
         margin: 0 0 2.5vw 0;
-        padding-left: 30px;
+        padding-left: 60px;
         width: 85vw;
     }
 
@@ -126,16 +127,16 @@
 
     .mainsectionleft {
         display: block;
-        padding-left: 10px;
+        padding-left: 50px;
     }
 
     .mainsectionright {
         display: block;
-        padding-left: 60px;
+        padding-left: 50px;
     }
 }
 
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 337px) {
     .h1 {
         font-size: 50px;
     }
@@ -152,12 +153,12 @@
 
     .mainsectionleft {
         display: block;
-        padding-left: 10px;
+        padding-left: 40px;
     }
 
     .mainsectionright {
         display: block;
-        padding-left: 60px;
+        padding-left: 40px;
     }
 
     .buttonblue {
