@@ -49,7 +49,7 @@ export default function Contact() {
                 {/* ============================== Start of left Area ================================= */}
                 <div className="leftArea">
 
-                    <img src="/img/logo_1.png" alt="We Super People Logo" />
+                    <img src="/img/logo_1.png" alt="We Super People Logo"  className="logoContact"/>
 
                     <div className="leftAreaText">
                         <h1>We Super <br /> People</h1>
