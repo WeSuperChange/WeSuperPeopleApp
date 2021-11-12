@@ -28,7 +28,7 @@ const Home = () => {
                     LOG IN
                 </Link>
                 <Link to="/letsgo" className={styles.buttongreen}>
-                    Los gehts
+                    LOS GEHT'S
                 </Link>
             </section>
             {/* ============================== Start of right Area ================================= */}

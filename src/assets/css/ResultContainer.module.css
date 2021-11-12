@@ -1,0 +1,15 @@
+.figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.p {
+    flex-basis: 100%;
+}
+
+.img {
+    padding: 0 0 30px;
+    max-height: 90vh;
+}

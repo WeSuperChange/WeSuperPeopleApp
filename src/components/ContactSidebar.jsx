@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const ContactSidebar = () => {
     return (
         <div className={styles.contactsidebar}>
-            <Link to="/contact">
+            <Link to="/contact" className={styles.link}>
                 <p className={styles.pfeile}>{">>"}</p>
             </Link>
         </div>
