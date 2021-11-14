@@ -13,7 +13,7 @@ const ResultContainer = () => {
                 className={styles.label}
             />
             <p className={styles.p}></p>
-            {/* IMG untent wird ersetz durch Chart */}
+            {/* IMG unten wird ersetz durch Chart */}
             <img
                 src="/img/Screenshot.png"
                 alt=""
@@ -30,7 +30,7 @@ const ResultContainer = () => {
                 className={styles.label}
             />
             <p className={styles.p}></p>
-            {/* IMG untent wird ersetz durch Chart */}
+            {/* IMG unten wird ersetz durch Chart */}
             <img
                 src="/img/Screenshot.png"
                 alt=""
@@ -47,7 +47,7 @@ const ResultContainer = () => {
                 className={styles.label}
             />
             <p className={styles.p}></p>
-            {/* IMG untent wird ersetz durch Chart */}
+            {/* IMG unten wird ersetz durch Chart */}
             <img
                 src="/img/Screenshot.png"
                 alt=""

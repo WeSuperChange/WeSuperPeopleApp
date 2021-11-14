@@ -4,7 +4,6 @@ import NextRandom from "../components/NextRandom";
 import ResultContainer from "../components/ResultContainer";
 import "../assets/css/style.css";
 import styles from "../assets/css/Results.module.css";
-import { Link } from "react-router-dom";
 
 const Results = () => {
     return (
