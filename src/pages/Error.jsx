@@ -1,6 +1,5 @@
-import React from 'react'
+import React from 'react';
 import styles from "../assets/css/Error.module.css";
-
 
 const ErrorPage = () => {
     return (
@@ -14,5 +13,3 @@ const ErrorPage = () => {
 };
 
 export default ErrorPage;
-
-// http://localhost:3000/err404

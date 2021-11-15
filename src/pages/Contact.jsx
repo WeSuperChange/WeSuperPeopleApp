@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 // import { Link } from "react-router-dom";
-import "../assets/css/Contact.css";
+import "../assets/css/Contact.css"
 
 export default function Contact() {
     return (
@@ -45,6 +45,7 @@ export default function Contact() {
             */}
             {/* contentArea  flex */}
             <div className="contentArea">
+
                 {/* ============================== Start of left Area ================================= */}
                 <div className="leftArea">
                     <img
@@ -54,56 +55,34 @@ export default function Contact() {
                     />
 
                     <div className="leftAreaText">
-                        <h1>
-                            We Super <br /> People
-                        </h1>
+                        <h1>We Super <br /> People</h1>
 
                         <p>
                             <span className="span_LA">Mitmachen</span> <br />
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.Harum similique corrupti itaque architecto
-                            minus laboriosam obcaecati repellat totam quidem
-                            nisi dicta sit beatae numquam, voluptas odit odio
-                            qui ipsum repudiandae.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.Harum similique corrupti itaque architecto minus laboriosam obcaecati repellat totam quidem nisi dicta sit beatae numquam, voluptas odit odio qui ipsum repudiandae.
                         </p>
                     </div>
+
                 </div>
+
 
                 {/* ============================== Start of right Area ================================= */}
                 <div className="rightArea">
+
                     {/* display: flex; flex-direction: column; */}
                     <form className="formBox" action="post">
-                        <label htmlFor="name">
-                            Name <span className="span_RA">*</span>
-                        </label>
-                        <input
-                            name="name"
-                            id="vorname"
-                            placeholder="Enter text"
-                        />
+                        <label htmlFor="name">Name <span className="span_RA">*</span></label>
+                        <input name="name" id="vorname" placeholder="Enter text" />
 
-                        <label htmlFor="email">
-                            Email <span className="span_RA">*</span>
-                        </label>
-                        <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            placeholder="Enter text"
-                        />
+                        <label htmlFor="email">Email <span className="span_RA">*</span></label>
+                        <input type="email" name="email" id="email" placeholder="Enter text" />
 
-                        <label htmlFor="input">
-                            Nachricht <span className="span_RA">*</span>
-                        </label>
-                        <textarea
-                            name="message"
-                            id="message"
-                            cols="30"
-                            rows="10"
-                        ></textarea>
+                        <label htmlFor="input">Nachricht <span className="span_RA">*</span></label>
+                        <textarea name="message" id="message" cols="30" rows="10" ></textarea>
 
                         <input type="submit" value="S E N D E N" id="senden" />
                     </form>
+
                 </div>
             </div>
 
@@ -111,5 +90,8 @@ export default function Contact() {
                 <p>TEST</p>
             </div>
         </section>
-    );
+    )
 }
+
+
+
