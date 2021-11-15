@@ -2,6 +2,9 @@
     color: white;
     display: flex;
     border-bottom: 2px solid rgb(5,125,246,0.3);
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 5px 15px;
 }
 
 /* suche nach dem letzten div mit divAnswer in dem kompletten namen */
@@ -12,10 +15,6 @@ div[class*=divAnswer]:last-child{
 .propsAnswer{
     font-family: "MontserratMedium";
     font-size: 22px;
-    padding-left: 2vw;
-    padding-right: 18vw;
-    padding-bottom: 2vh;
-    padding-top: 1vh;
 }
 
 /* Denk daran Fabi "LATEGAME" ;-P */
