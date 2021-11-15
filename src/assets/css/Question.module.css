@@ -19,16 +19,3 @@
     -webkit-text-stroke: 2px #3ed7ad;
     color: #041e37;
 }
-
-.questionCard{
-    margin-left: 15vw;
-}
-
-.skip{
-    border: 1px solid #60F1C8;
-    color: #60F1C8;
-    text-decoration: none;
-    background-color: #057DF6;
-    border-radius: 5px;
-    padding: 0.5vh 1vw;
-}
