@@ -37,26 +37,6 @@
     line-height: 0.9em;
 }
 
-.buttonblue {
-    text-decoration: none;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding: 7.5px 20px;
-    background-color: #057df6;
-    color: #3ed7ad;
-    border: 2px solid #3ed7ad;
-    letter-spacing: 0.2rem;
-}
-
-.buttongreen {
-    text-decoration: none;
-    margin-bottom: 20px;
-    padding: 9.5px 20px;
-    background-color: #3ed7ad;
-    color: #057df6;
-    letter-spacing: 0.2rem;
-}
-
 @media only screen and (max-width: 974px) {
     .h1 {
         display: block;
@@ -98,13 +78,5 @@
     .mainsectionright {
         margin-top: 20px;
         min-height: 55vh;
-    }
-
-    .buttonblue {
-        margin-right: 10px;
-    }
-
-    .buttongreen {
-        margin-right: 10px;
     }
 }
