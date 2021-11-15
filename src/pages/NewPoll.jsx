@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-import React from 'react';
-import { Link } from "react-router-dom";
-=======
 import React from "react";
 import ContactSidebar from "../components/ContactSidebar";
 import ResultContainer from "../components/ResultContainer";
 import "../assets/css/style.css";
 import styles from "../assets/css/NewPoll.module.css";
->>>>>>> 4c672bb539d50a609a2e1ddaefb9fde17b7b9071
 
 const NewPoll = () => {
     return (
