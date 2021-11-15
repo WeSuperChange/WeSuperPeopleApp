@@ -8,10 +8,13 @@ import './assets/fonts/FiraSans-Light.ttf';
 import './assets/fonts/FiraSans-Regular.ttf';
 import './assets/fonts/Montserrat-Medium.ttf';
 import './assets/fonts/Montserrat-SemiBold.ttf';
+import { AuthContextProvider } from './context/AuthContext';
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <AuthContextProvider>
+            <App />
+        </AuthContextProvider>
     </React.StrictMode>,
     document.getElementById('root')
 );
