@@ -1,13 +1,33 @@
-import React from 'react';
-import styles from "../assets/css/Login.module.css";
-// import SuperPeople from '../components/SuperPeople';
+import React from "react";
+import ContactSidebar from "../components/ContactSidebar";
 import LoginCard from '../components/LoginCard';
+import "../assets/css/style.css";
+import styles from "../assets/css/Login.module.css";
 
-export default function Login() {
+const NewPoll = () => {
     return (
-        <div className={styles.allLogin}>
-            {/* <SuperPeople /> */}
-            <LoginCard className={styles.componentLoginCard} />
+        <div className={styles.parent}>
+            {/* Home - Todo: Sidebar will be moved to app.js */}
+            <ContactSidebar />
+            {/* ============================== Start of left Area ================================= */}
+            <section className={styles.mainsectionleft}>
+                <img
+                    src="./img/logo_1.png"
+                    alt="We Super People logo"
+                    className={styles.logo}
+                />
+                <h1 className={styles.h1}>
+                    We Super
+                    <br /> &nbsp;&nbsp;&nbsp;People
+                </h1>
+            </section>
+            {/* ============================== Start of right Area ================================= */}
+            <section className={styles.mainsectionright}>
+                {/* here component for charts, survey, etc */}
+                <LoginCard className={styles.componentLoginCard} />
+            </section>
         </div>
-    )
-}
+    );
+};
+
+export default NewPoll;
