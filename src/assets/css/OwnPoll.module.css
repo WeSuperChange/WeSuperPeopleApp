@@ -1,0 +1,102 @@
+.parent {
+    background: bottom center/contain no-repeat url("../img/LillaVector1.png"),
+        60% / 50% 100vh no-repeat url("../img/Ellipse1.png"),
+        right center/60vw 100vh no-repeat url("../img/Rectangle15.png");
+    background-color: #041e37;
+    color: #3ed7ad;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.mainsectionleft {
+    display: inline-block;
+    margin: 0 5vw;
+    width: 30vw;
+    height: 40vh;
+}
+
+.mainsectionright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.logo {
+    width: 65px;
+}
+
+.h1 {
+    font-size: 50px;
+    overflow-wrap: break-word;
+    display: inline-block;
+    line-height: 0.9em;
+}
+
+.buttonblue {
+    text-decoration: none;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 7.5px 20px;
+    background-color: #057df6;
+    color: #3ed7ad;
+    border: 2px solid #3ed7ad;
+    letter-spacing: 0.2rem;
+}
+
+.buttongreen {
+    text-decoration: none;
+    margin-bottom: 20px;
+    padding: 9.5px 20px;
+    background-color: #3ed7ad;
+    color: #057df6;
+    letter-spacing: 0.2rem;
+}
+
+@media only screen and (max-width: 974px) {
+    .h1 {
+        display: block;
+    }
+
+    .mainsectionleft {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 793px) {
+    .parent {
+        flex-wrap: wrap;
+        background: bottom center/contain no-repeat
+            url("../img/LillaVector1.png");
+        background-color: #041e37;
+        align-items: center;
+    }
+    .mainsectionleft {
+        margin: auto;
+        width: auto;
+        height: auto;
+    }
+
+    .mainsectionright {
+        height: auto;
+        margin: auto;
+        width: auto;
+        padding: 10px 0 30px 30px;
+    }
+}
+
+@media only screen and (max-width: 465px) {
+    .mainsectionleft {
+        height: 40vh;
+        margin: 0 0 0 60px;
+    }
+
+    .mainsectionright {
+        margin-top: 20px;
+        min-height: 55vh;
+    }
+}
