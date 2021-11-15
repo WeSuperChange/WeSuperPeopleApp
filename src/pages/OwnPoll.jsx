@@ -1,6 +1,5 @@
 import React from "react";
 import ContactSidebar from "../components/ContactSidebar";
-import NextRandom from "../components/NextRandom";
 import ResultContainer from "../components/ResultContainer";
 import "../assets/css/style.css";
 import styles from "../assets/css/OwnPoll.module.css";
