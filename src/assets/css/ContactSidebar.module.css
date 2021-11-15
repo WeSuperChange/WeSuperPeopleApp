@@ -1,6 +1,6 @@
 .contactsidebar {
     background-color: #3dd7ac;
-    display: inline-flex;
+    display: flex;
     flex-direction: column-reverse;
     width: 2.5vw;
     border-top: 3px solid white;
@@ -8,10 +8,10 @@
     border-right: 3px solid white;
     min-width: 30px;
     height: 99.5vh;
-    color: red;
     text-align: center;
-    position: -webkit-sticky;
-    position: sticky;
+    /* position: -webkit-sticky;
+    position: sticky; */
+    position: fixed;
     top: 0;
 }
 
@@ -26,4 +26,14 @@
     height: 40px;
     width: 100%;
     font-size: 1.25rem;
+}
+
+.link {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 793px) {
+    .contactsidebar {
+        position: fixed;
+    }
 }

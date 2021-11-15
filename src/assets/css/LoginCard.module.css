@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.allLoginCard{
+    background: url("../img/LoginCard.png");
+    height: 80vh;
+    width: 30vw;
+    border-radius: 10px;
+    padding-top: 5vh;
+    margin-left: 5vw; 
+}
+
+.form{
+    margin-left: 2vw;
+    width: 26.5vw;
+    display: flex;
+    flex-direction: column; 
+}
+
+.fieldsetOne, .fieldsetTwo{
+    border-color: #057DF6;
+    border-radius: 8px;
+    height: 13.5vh;
+    padding-top: 2vh;
+    padding-left: 1vw;
+}
+
+.fieldsetOne{
+    margin-bottom: 6vh;
+}
+
+.fieldsetTwo{
+    margin-bottom: 1vh;
+}
+
+
+.userName,.password{
+    /* padding-left: 1vw; */
+    /* padding-top: 20vh; */
+    color: black;
+    font-family: "FiraSansRegular";
+}
+
+.star{
+    color: red;
+}
+
+.input{
+    font-family: "FiraSansRegular";
+    margin-top: 2vh;
+    padding-top: 2vh;
+    padding-right: 14.3vw;
+    padding-bottom: 2vh;
+    border-color: #057DF6;
+    border-radius: 8px;
+    border-style: solid;
+}
+
+::placeholder{
+    padding-left: 0.8vw;
+}
+
+.lostPassword{
+    font-family: "FiraSansLight";
+    font-size: 0.8rem;
+    color: #2D99FF;
+    text-decoration: none;
+}
+.loginButton{
+    text-decoration: none;
+    padding: 7.5px 20px;
+    background-color: #057df6;
+    color: #3ed7ad;
+    border: 2px solid #3ed7ad;
+    letter-spacing: 0.2rem;
+    margin-top: 14vh;
+    margin-right: 3vh;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+}
