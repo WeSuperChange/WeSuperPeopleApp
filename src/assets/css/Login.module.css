@@ -1,3 +1,8 @@
-.test{
-    color: red;
+.allLogin{
+    height: 100vh;
+    background: bottom center/contain no-repeat url("../img/LillaVector1.png"),
+        60% / 50% 100vh no-repeat url("../img/Ellipse1.png"),
+        right center/60vw 100vh no-repeat url("../img/Rectangle15.png");
+    background-color: #041e37;
+    /* padding-top: 100px; */
 }
