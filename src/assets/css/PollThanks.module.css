@@ -1,27 +1,34 @@
-.allPollThanks{
-    background: #041e37 bottom center/contain no-repeat url("../img/LillaVector1.png");
+.allPollThanks {
+    background: #041e37 bottom center/contain no-repeat
+        url("../img/LillaVector1.png");
     height: 100vh;
     color: #3ed7ad;
     text-align: center;
 }
 
-.webStrokeYeah{
+.webStrokeYeah {
     -webkit-text-stroke: 2px #3ed7ad;
     color: #041e37;
 }
 
-.text{
+.text {
     width: 34vw;
     /* border: 1px solid #3ed7ad; */
     margin: 0 auto;
     padding-top: 30vh;
 }
 
-.yeah{
+.yeah {
     font-size: 3rem;
     margin-bottom: 5vh;
 }
 
-.deineGedanken{
+.deineGedanken {
     font-family: "FiraSansRegular";
+}
+
+@media only screen and (max-width: 566px) {
+    .webStrokeYeah {
+        display: block;
+    }
 }

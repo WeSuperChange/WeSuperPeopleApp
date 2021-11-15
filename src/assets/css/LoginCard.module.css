@@ -55,9 +55,6 @@
     border-radius: 8px;
     border-style: solid;
     width: 85%;
-}
-
-::placeholder {
     padding-left: 0.8vw;
 }
 

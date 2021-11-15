@@ -1,21 +1,55 @@
 /* gesamte Seite */
-.allQuestion{
-    background:
-    -14rem 8rem no-repeat url("../img/LillaVector2.png"),
-    right center/contain no-repeat url("../img/erde_2.png");
+.allQuestion {
+    background: bottom center no-repeat url("../img/LillaVector2.png"),
+        right center/contain no-repeat url("../img/erde_2.png");
     background-color: #041e37;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.allVoices{
+.allVoices {
     width: 24vw;
     margin-left: 8vw;
     font-size: 45px;
     color: #3ed7ad;
-    margin-top: 2vh; 
+    margin-top: 2vh;
 }
-.webStroke{
+.webStroke {
     -webkit-text-stroke: 2px #3ed7ad;
     color: #041e37;
+}
+
+.rightarea {
+    margin: auto;
+}
+
+.skip {
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 7.5px 20px;
+    background-color: #057df6;
+    color: #3ed7ad;
+    border: 2px solid #3ed7ad;
+    letter-spacing: 0.2rem;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1221px) {
+    .allQuestion {
+        background: bottom center no-repeat url("../img/LillaVector2.png");
+        background-color: #041e37;
+        height: unset;
+    }
+    .leftarea {
+        text-align: center;
+    }
+
+    .allVoices {
+        width: 90vw;
+    }
+
+    .rightarea {
+        margin: 2vh 30px 2vh 60px;
+    }
 }
