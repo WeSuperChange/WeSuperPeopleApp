@@ -26,23 +26,36 @@ function App() {
     return (
         //Routing - ToDo: Handle auth users
         < Router >
-            {appReady && (
-                <Routes>
-                    <Route path="/" element={<Home />} exact />
-                    <Route path="/login" element={<Login />} exact />
-                    <Route path="/signin" element={<SignIn />} exact />
-                    <Route path="/letsgo" element={<Letsgo />} exact />
-                    <Route path="/contact" element={<Contact />} exact />
-                    <Route path="/contact_thanks" element={<ContactThanks />} exact />
-                    <Route path="/home_poll" element={<HomePoll />} exact />
-                    <Route path="/new_poll" element={<NewPoll />} exact />
-                    <Route path="/own_poll" element={<OwnPoll />} exact />
-                    <Route path="/question" element={<Question />} exact />
-                    <Route path="/poll_thanks" element={<PollThanks exact />} />
-                    <Route path="/Results" element={<Results />} exact />
-                    <Route path="*" element={<ErrorPage />} />
-                </Routes>
-            )}
+            {/* {appReady && ( */}
+            <Routes>
+                {/* Home Sweet Home */}
+                <Route path="/" element={<Home />} exact />
+
+                {/* everything to login or create a new account */}
+                <Route path="/login" element={<Login />} exact />
+                <Route path="/signin" element={<SignIn />} exact />
+
+                {/* stay in touch with us */}
+                <Route path="/contact" element={<Contact />} exact />
+                <Route path="/contact_thanks" element={<ContactThanks />} exact />
+
+                {/* public area: questions and  answers */}
+                <Route path="/letsgo" element={<Letsgo />} exact />
+                <Route path="/home_poll" element={<HomePoll />} exact />
+                <Route path="/question" element={<Question />} exact />
+                <Route path="/poll_thanks" element={<PollThanks exact />} />
+                <Route path="/Results" element={<Results />} exact />
+
+                {/* for the lucky people having an account: create a new poll */}
+                {appReady && <Route path="/new_poll" element={<NewPoll />} exact />}
+                {appReady && <Route path="/own_poll" element={<OwnPoll />} exact />}
+
+                {/* {appReady &&<Route path="/logout" element={<Logout />} exact /> } */}
+
+                <Route path="*" element={<ErrorPage />} />
+
+            </Routes>
+            {/* )} */}
         </Router >
     );
 }
