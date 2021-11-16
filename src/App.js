@@ -16,11 +16,9 @@ import Results from "./pages/Results";
 import HomePoll from "./pages/HomePoll";
 import ErrorPage from "./pages/Error";
 import SignIn from "./pages/Signin";
-import { useLogout } from "./hooks/useLogout";
 import { useAuthContext } from "./hooks/useAuthContext";
 
 function App() {
-    const { error, logout } = useLogout()
     const { user, appReady } = useAuthContext()
 
     return (
@@ -35,8 +33,8 @@ function App() {
                     <Route path="/contact" element={<Contact />} exact />
                     <Route path="/contact_thanks" element={<ContactThanks />} exact />
                     <Route path="/home_poll" element={<HomePoll />} exact />
-                    <Route path="/new_poll" element={<NewPoll />} exact />
-                    <Route path="/own_poll" element={<OwnPoll />} exact />
+                    {user && (<Route path="/new_poll" element={<NewPoll />} />)}
+                    {user && (<Route path="/own_poll" element={<OwnPoll />} />)}
                     <Route path="/question" element={<Question />} exact />
                     <Route path="/poll_thanks" element={<PollThanks exact />} />
                     <Route path="/Results" element={<Results />} exact />

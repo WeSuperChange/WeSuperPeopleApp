@@ -46,8 +46,8 @@ export default function LoginCard() {
                 </fieldset>
                 <div className={styles.buttonContainer}>
                     <div>
-                        <Link to="/" className={styles.lostPassword}>
-                            Passwort vergessen?
+                        <Link to="/signin" className={styles.lostPassword}>
+                            Registrieren?
                         </Link>
                     </div>
                     <div>

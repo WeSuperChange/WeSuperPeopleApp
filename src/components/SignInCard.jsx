@@ -9,10 +9,15 @@ export default function SignInCard() {
     // Login handler
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [confirmPassword, setconfirmedPassword] = useState('');
     const { error, signup } = useSignup()
     const handleSubmit = (e) => {
         e.preventDefault();
-        signup(email, password)
+        if (password !== confirmPassword) {
+            //error
+        } else {
+            signup(email, password)
+        }
     }
 
     return (
@@ -38,9 +43,9 @@ export default function SignInCard() {
                     <input
                         className={styles.input}
                         type="password"
-                        name="Passwort"
                         placeholder="Passwort"
                         value={password}
+                        required
                         onChange={(e) => setPassword(e.target.value)}
                     />
                     <label htmlFor="PasswortZwei" className={styles.password}>Passwort wiederholen
@@ -49,17 +54,12 @@ export default function SignInCard() {
                     <input
                         className={styles.input}
                         type="password"
-                        name="Passwort"
                         placeholder="Passwort"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
+                        value={confirmPassword}
+                        required
+                        onChange={(e) => setconfirmedPassword(e.target.value)}
                     />
                 </fieldset>
-
-
-
-
-
 
                 {/* <fieldset className={styles.fieldsetThree}>
                     <label htmlFor="PasswortZwei" className={styles.password}>Passwort wiederholen
@@ -74,16 +74,17 @@ export default function SignInCard() {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </fieldset> */}
-                {/* <div className={styles.buttonContainer}> */}
-                {/* <div>
-                        <Link to="/" className={styles.lostPassword}>
-                            Passwort vergessen?
+
+                <div className={styles.buttonContainer}>
+                    <div>
+                        <Link to="/login" className={styles.lostPassword}>
+                            Anmelden?
                         </Link>
-                    </div> */}
-                <div>
-                    <input className={styles.signinButton} type="submit" value="SIGNIN" />
+                    </div>
+                    <div>
+                        <input className={styles.signinButton} type="submit" value="SIGNIN" />
+                    </div>
                 </div>
-                {/* </div> */}
                 {error && <p>{error}</p>}
             </form>
         </div>

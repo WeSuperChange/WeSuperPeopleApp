@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 .allSigninCard {
     background: center/cover no-repeat url("../img/LoginCard.png");
     height: 80vh;
@@ -16,9 +15,7 @@
     flex-direction: column;
 }
 
-.fieldsetOne,
-.fieldsetTwo,
-.fieldsetThree {
+.fieldsetOne, .fieldsetTwo, .fieldsetThree {
     border-color: #057df6;
     border-radius: 8px;
     height: 13.5vh;
@@ -31,15 +28,15 @@
 }
 
 .fieldsetTwo {
-    margin-bottom: 4vh;
+    margin-bottom: 1vh;
     padding-bottom: 13.8vh;
 }
+
 /* .fieldsetThree{
 
 } */
 
-.userName,
-.password {
+.userName, .password {
     /* padding-left: 1vw; */
     /* padding-top: 20vh; */
     color: black;
@@ -63,12 +60,12 @@
     padding-left: 0.8vw;
 }
 
-/* .lostPassword {
+.lostPassword {
     font-family: "FiraSansLight";
     font-size: 0.8rem;
     color: #2d99ff;
     text-decoration: none;
-} */
+}
 
 .signinButton {
     text-decoration: none;
@@ -81,17 +78,16 @@
     margin-left: 18vw;
 }
 
-/* .buttonContainer {
+.buttonContainer {
     display: flex;
     justify-content: space-between;
-} */
+}
 
 @media only screen and (max-width: 464px) {
     .allSigninCard {
         width: 90vw;
         margin: 0 5vw 0 7vw;
     }
-
     .form {
         width: auto;
         margin: 0 2vw;
