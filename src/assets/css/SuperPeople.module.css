@@ -1,13 +1,19 @@
-.logoWeSuperPeople{
+.logoWeSuperPeople {
     display: flex;
     align-items: center;
     width: 24vw;
-    font-size:26px;
+    font-size: 26px;
     color: #3ed7ad;
     padding-top: 18vh;
     margin-left: 8vw;
 }
 
-.logo{
+.logo {
     width: 115px;
+}
+
+@media only screen and (max-width: 1221px) {
+    .logoWeSuperPeople {
+        width: unset;
+    }
 }

@@ -1,71 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-.allLoginCard{
-    background: no-repeat url("../img/LoginCard.png");
+.allLoginCard {
+    background: center/cover no-repeat url("../img/LoginCard.png");
     height: 80vh;
     width: 30vw;
     border-radius: 10px;
     padding-top: 5vh;
-    margin-left: 5vw; 
+    margin-left: 5vw;
 }
 
-.form{
+.form {
     margin-left: 2vw;
     width: 26.5vw;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
-.fieldsetOne, .fieldsetTwo{
-    border-color: #057DF6;
+.fieldsetOne,
+.fieldsetTwo {
+    border-color: #057df6;
     border-radius: 8px;
     height: 13.5vh;
     padding-top: 2vh;
     padding-left: 1vw;
 }
 
-.fieldsetOne{
+.fieldsetOne {
     margin-bottom: 6vh;
 }
 
-.fieldsetTwo{
+.fieldsetTwo {
     margin-bottom: 1vh;
 }
 
-
-.userName,.password{
+.userName,
+.password {
     /* padding-left: 1vw; */
     /* padding-top: 20vh; */
     color: black;
     font-family: "FiraSansRegular";
 }
 
-.star{
+.star {
     color: red;
 }
 
-.input{
+.input {
     font-family: "FiraSansRegular";
-    margin-top: 2vh;
+    margin: 2vh;
     padding-top: 2vh;
-    padding-right: 14.3vw;
+    /* padding-right: 14.3vw; */
     padding-bottom: 2vh;
-    border-color: #057DF6;
+    border-color: #057df6;
     border-radius: 8px;
     border-style: solid;
-}
-
-::placeholder{
+    width: 85%;
     padding-left: 0.8vw;
 }
 
-.lostPassword{
+.lostPassword {
     font-family: "FiraSansLight";
     font-size: 0.8rem;
-    color: #2D99FF;
+    color: #2d99ff;
     text-decoration: none;
 }
-.loginButton{
+.loginButton {
     text-decoration: none;
     padding: 7.5px 20px;
     background-color: #057df6;
@@ -76,7 +75,19 @@
     margin-right: 3vh;
 }
 
-.buttonContainer{
+.buttonContainer {
     display: flex;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 464px) {
+    .allLoginCard {
+        width: 90vw;
+        margin: 0 5vw 0 7vw;
+    }
+
+    .form {
+        width: auto;
+        margin: 0 2vw;
+    }
 }

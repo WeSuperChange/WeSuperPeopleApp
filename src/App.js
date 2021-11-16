@@ -15,6 +15,7 @@ import PollThanks from "./pages/PollThanks";
 import Results from "./pages/Results";
 import HomePoll from "./pages/HomePoll";
 import ErrorPage from "./pages/Error";
+import SignIn from "./pages/Signin";
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} exact />
                 <Route path="/login" element={<Login />} exact />
+                <Route path="/signin" element={<SignIn />} exact />
                 <Route path="/letsgo" element={<Letsgo />} exact />
                 <Route path="/contact" element={<Contact />} exact />
                 <Route path="/contact_thanks" element={<ContactThanks />} exact />

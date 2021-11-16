@@ -1,51 +1,72 @@
 /* gesamte Seite */
-.allLetsgo{
-    background: #041e37 bottom center/contain no-repeat url("../img/LillaVector1.png");
+.allLetsgo {
+    background: #041e37 bottom center/contain no-repeat
+        url("../img/LillaVector1.png");
     height: 100vh;
 }
 
-.logo{
+.logo {
     width: 65px;
     margin-top: 2vh;
     margin-left: 10vw;
 }
 
 /* gesamter Textblock */
-.letsgo{
+.letsgo {
     text-align: center;
     width: 37vw;
     margin: 0 auto;
     margin-top: 10vh;
-    color: #3ed7ad; 
+    color: #3ed7ad;
 }
 
-.los{
+.los {
     margin-bottom: 3vh;
+    font-size: 88px;
 }
 
-.geht{
+.geht {
     color: #041e37;
     -webkit-text-stroke: 2px #3ed7ad;
+    font-size: 88px;
 }
 
-.hi{
+.hi {
     margin-bottom: 5vh;
 }
 
-.doYou{
+.pollquestion {
     margin-bottom: 5vh;
+    font-size: 30px;
 }
 
 /* Start und pressEnter */
-.startEnter{
+.startEnter {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
+    color: #3ed7ad;
 }
 
-.start{
+.start {
     background-color: #3ed7ad;
-    padding: 5px 15px;
     margin-right: 15px;
-    color: #5D3EDE;
+    color: #5d3ede;
+    padding: 9.5px 40px;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.press {
+    font-family: FiraSansRegular;
+}
+
+@media only screen and (max-width: 974px) {
+    .letsgo {
+        width: unset;
+        margin: 0 40px 0 60px;
+        margin-top: 10vh;
+        color: #3ed7ad;
+    }
 }

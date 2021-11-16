@@ -1,18 +1,18 @@
 import React from 'react';
 import { useState } from 'react';
-import { useLogin } from '../hooks/useLogin';
 import { Link } from "react-router-dom";
 import styles from "../assets/css/LoginCard.module.css";
+import { useSignup } from '../hooks/useSignup';
 
-export default function LoginCard() {
+export default function SignIn() {
 
     //Login handler
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const { error, login } = useLogin()
+    const { error, signup } = useSignup()
     const handleSubmit = (e) => {
         e.preventDefault();
-        login(email, password)
+        signup(email, password)
     }
 
     return (
