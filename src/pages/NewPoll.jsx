@@ -1,6 +1,7 @@
 import React from "react";
 import ContactSidebar from "../components/ContactSidebar";
-import ResultContainer from "../components/ResultContainer";
+import { Link } from "react-router-dom";
+import NewPollCard from "../components/NewPollCard";
 import "../assets/css/style.css";
 import styles from "../assets/css/NewPoll.module.css";
 
@@ -11,11 +12,13 @@ const NewPoll = () => {
             <ContactSidebar />
             {/* ============================== Start of left Area ================================= */}
             <section className={styles.mainsectionleft}>
-                <img
-                    src="./img/logo_1.png"
-                    alt="We Super People logo"
-                    className={styles.logo}
-                />
+                <Link to="/">
+                    <img
+                        src="./img/logo_1.png"
+                        alt="We Super People logo"
+                        className={styles.logo}
+                    />
+                </Link>
                 <h1 className={styles.h1}>
                     We Super
                     <br /> &nbsp;&nbsp;&nbsp;People
@@ -24,7 +27,7 @@ const NewPoll = () => {
             {/* ============================== Start of right Area ================================= */}
             <section className={styles.mainsectionright}>
                 {/* here component for charts, survey, etc */}
-                <ResultContainer />
+                <NewPollCard />
             </section>
         </div>
     );

@@ -13,7 +13,7 @@
     display: inline-block;
     margin: 0 5vw;
     width: 30vw;
-    height: 40vh;
+    min-height: 40vh;
 }
 
 .mainsectionright {
@@ -23,7 +23,7 @@
     align-items: center;
     width: 60vw;
     height: 100vh;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 .logo {
@@ -58,25 +58,25 @@
     .mainsectionleft {
         margin: auto;
         width: auto;
-        height: auto;
+        /* height: auto; */
     }
 
     .mainsectionright {
-        height: auto;
+        /* height: auto; */
         margin: auto;
         width: auto;
-        padding: 10px 0 30px 30px;
+        padding: 0 0 0 30px;
     }
 }
 
 @media only screen and (max-width: 465px) {
     .mainsectionleft {
-        height: 40vh;
+        min-height: 30vh;
         margin: 0 0 0 60px;
     }
 
     .mainsectionright {
-        margin-top: 20px;
         min-height: 55vh;
+        width: 90%;
     }
 }
