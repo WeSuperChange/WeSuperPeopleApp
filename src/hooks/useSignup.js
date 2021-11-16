@@ -1,12 +1,14 @@
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 import { auth } from '../firebase/config'
 import { useState } from 'react';
 import { useAuthContext } from "./useAuthContext";
+import { useNavigate } from "react-router-dom";
 
 export const useSignup = () => {
     //init error and auth context
     const [error, setError] = useState(null);
     const { dispatch } = useAuthContext()
+    let navigate = useNavigate()
 
     const signup = (email, password) => {
         //reset error
@@ -15,12 +17,10 @@ export const useSignup = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 // Signed in 
-                const user = userCredential.user;
 
-                console.log(userCredential)
-
-                dispatch({ type: 'LOGIN', payload: user })
-
+                sendEmailVerification(userCredential.user)
+                dispatch({ type: 'LOGIN', payload: userCredential.user })
+                navigate('/login')
             })
             .catch((error) => {
                 setError(error.message)

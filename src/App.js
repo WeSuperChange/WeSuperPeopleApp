@@ -16,27 +16,34 @@ import Results from "./pages/Results";
 import HomePoll from "./pages/HomePoll";
 import ErrorPage from "./pages/Error";
 import SignIn from "./pages/Signin";
+import { useLogout } from "./hooks/useLogout";
+import { useAuthContext } from "./hooks/useAuthContext";
 
 function App() {
+    const { error, logout } = useLogout()
+    const { user, appReady } = useAuthContext()
+
     return (
         //Routing - ToDo: Handle auth users
-        <Router>
-            <Routes>
-                <Route path="/" element={<Home />} exact />
-                <Route path="/login" element={<Login />} exact />
-                <Route path="/signin" element={<SignIn />} exact />
-                <Route path="/letsgo" element={<Letsgo />} exact />
-                <Route path="/contact" element={<Contact />} exact />
-                <Route path="/contact_thanks" element={<ContactThanks />} exact />
-                <Route path="/home_poll" element={<HomePoll />} exact />
-                <Route path="/new_poll" element={<NewPoll />} exact />
-                <Route path="/own_poll" element={<OwnPoll />} exact />
-                <Route path="/question" element={<Question />} exact />
-                <Route path="/poll_thanks" element={<PollThanks exact />} />
-                <Route path="/Results" element={<Results />} exact />
-                <Route path="*" element={<ErrorPage />} />
-            </Routes>
-        </Router>
+        < Router >
+            {appReady && (
+                <Routes>
+                    <Route path="/" element={<Home />} exact />
+                    <Route path="/login" element={<Login />} exact />
+                    <Route path="/signin" element={<SignIn />} exact />
+                    <Route path="/letsgo" element={<Letsgo />} exact />
+                    <Route path="/contact" element={<Contact />} exact />
+                    <Route path="/contact_thanks" element={<ContactThanks />} exact />
+                    <Route path="/home_poll" element={<HomePoll />} exact />
+                    <Route path="/new_poll" element={<NewPoll />} exact />
+                    <Route path="/own_poll" element={<OwnPoll />} exact />
+                    <Route path="/question" element={<Question />} exact />
+                    <Route path="/poll_thanks" element={<PollThanks exact />} />
+                    <Route path="/Results" element={<Results />} exact />
+                    <Route path="*" element={<ErrorPage />} />
+                </Routes>
+            )}
+        </Router >
     );
 }
 
