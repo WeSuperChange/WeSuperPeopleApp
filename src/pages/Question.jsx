@@ -27,6 +27,9 @@ const Question = () => {
                 <Link to="/question" className={styles.skip}>
                     SKIP {">>"}
                 </Link>
+                <Link to="/question" className={styles.skip}>
+                    NEXT {">>"}
+                </Link>
             </div>
         </div>
     );

@@ -22,6 +22,8 @@
 
 .rightarea {
     margin: auto;
+    /* nachträglich eingefügt */
+    margin-right: 50px;
 }
 
 .skip {

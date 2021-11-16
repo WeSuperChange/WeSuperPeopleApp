@@ -71,13 +71,13 @@ export default function Contact() {
 
                     {/* display: flex; flex-direction: column; */}
                     <form className="formBox" action="post">
-                        <label htmlFor="name">Name <span className="span_RA">*</span></label>
+                        <label className="label" htmlFor="name">Name <span className="span_RA">*</span></label>
                         <input name="name" id="vorname" placeholder="Enter text" />
 
-                        <label htmlFor="email">Email <span className="span_RA">*</span></label>
+                        <label className="label" htmlFor="email">Email <span className="span_RA">*</span></label>
                         <input type="email" name="email" id="email" placeholder="Enter text" />
 
-                        <label htmlFor="input">Nachricht <span className="span_RA">*</span></label>
+                        <label className="label" htmlFor="input">Nachricht <span className="span_RA">*</span></label>
                         <textarea name="message" id="message" cols="30" rows="10" ></textarea>
 
                         <input type="submit" value="S E N D E N" id="senden" />

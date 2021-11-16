@@ -1,21 +1,74 @@
-.divAnswer{
+.radio{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: "MontserratMedium";
+    /* padding: 5px 0px; */
+}
+
+/* eigentlicher radio button */
+.radio__input{
+    display: none;   
+}
+
+/* custom radio button */
+.radio__radio{
+    width: 1.25em;
+    height: 1.25em;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-left: 31vw;
+}
+
+.radio__radio::after{
+    content:"";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #3ed7ad;
+    border-radius: 50%;
+
+    transform: scale(0);
+}
+
+.radio__input:checked + .radio__radio::after{
+    transform: scale(1);
+}
+
+.allAnswer{
+    border-bottom: 2px solid rgb(5,125,246,0.3);
+    padding: 5px 0px 5px 15px;
+}
+
+/* suche nach dem letzten div mit divAnswer in dem kompletten namen */
+div[class*=allAnswer]:last-child{
+    border: none;
+}
+
+
+
+
+
+/* ursprüngliche version */
+/* .divAnswer{
     color: white;
     display: flex;
     border-bottom: 2px solid rgb(5,125,246,0.3);
     align-items: baseline;
     justify-content: space-between;
     padding: 5px 15px;
-}
+} */
 
 /* suche nach dem letzten div mit divAnswer in dem kompletten namen */
-div[class*=divAnswer]:last-child{
+/* div[class*=divAnswer]:last-child{
     border: none;
 } 
 
 .propsAnswer{
     font-family: "MontserratMedium";
     font-size: 22px;
-}
+} */
 
 /* Denk daran Fabi "LATEGAME" ;-P */
 /* Später für das Custom Styling; Denke an die Wildcards */

@@ -80,7 +80,7 @@
     resize: none;
 }
 
-label {
+.label {
     font-family: "Inter", sans-serif;
     font-size: 0.8rem;
     color: #595959;

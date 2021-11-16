@@ -10,10 +10,10 @@ const QuestionCard = () => {
                 Do you believe the climate is changing?
             </h3>
             <div className={styles.answers}>
-                <QuestionCardAnswer answer={"text"} />
-                <QuestionCardAnswer answer={"text"} />
-                <QuestionCardAnswer answer={"text"} />
-                <QuestionCardAnswer answer={"text"} />
+                <QuestionCardAnswer id="1" answer={"text"} />
+                <QuestionCardAnswer id="2" answer={"text"} />
+                <QuestionCardAnswer id="3" answer={"text"} />
+                <QuestionCardAnswer id="4" answer={"text"} />
             </div>
         </div>
     );
