@@ -1,0 +1,26 @@
+.contactThanks {
+    height: 100vh;
+    background-color: #3ed7ad;
+    text-align: center;
+}
+
+.webStrokeContactThx {
+    -webkit-text-stroke: 2px #3ed7ad;
+    color: #041e37;
+}
+
+.text {
+    width: 34vw;
+    /* border: 1px solid #3ed7ad; */
+    margin: 0 auto;
+    padding-top: 30vh;
+}
+
+.thx {
+    font-size: 3rem;
+    margin-bottom: 5vh;
+}
+
+.contactThanksText {
+    font-family: "FiraSansRegular";
+}
