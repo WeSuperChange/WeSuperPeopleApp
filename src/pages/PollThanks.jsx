@@ -1,9 +1,15 @@
 import React from "react";
+import { useState } from "react";
+import { Navigate } from "react-router-dom";
 import ContactSidebar from "../components/ContactSidebar";
 import styles from "../assets/css/PollThanks.module.css";
 
 export default function PollThanks() {
-    return (
+    const [redirectNow, setRedirectNow] = useState(false);
+    setTimeout(() => setRedirectNow(true), 3000);
+    return redirectNow ? (
+        <Navigate to="/" />
+    ) : (
         <div className={styles.allPollThanks}>
             <ContactSidebar />
             <div className={styles.text}>

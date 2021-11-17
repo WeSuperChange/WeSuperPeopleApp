@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../assets/css/Contact.css"
 
 export default function Contact() {
@@ -87,9 +87,11 @@ export default function Contact() {
             </div>
 
             <div className="Sidebar">
-                <p>TEST</p>
+                <Link to="/" className="link" >
+                    {"<<"}
+                </Link>
             </div>
-        </section>
+        </section >
     )
 }
 
