@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import styles from "../assets/css/NewPollCard.module.css";
 import { useAuthContext } from "../hooks/useAuthContext";
-import { Navigate } from "react-router-dom";
 import axios from "axios";
 // const axios = require("axios");
 
