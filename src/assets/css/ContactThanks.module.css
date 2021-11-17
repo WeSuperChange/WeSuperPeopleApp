@@ -11,11 +11,12 @@
 }
 
 .text {
-    width: 38vw;
+    /* width: 43vw; */
     /* border: 1px solid #3ed7ad; */
-    margin: 0 auto;
-    padding-top: 30vh;
-    padding-bottom: 39.35vh;
+    margin: auto;
+    padding-top: 20%;
+    padding-bottom: 15.4%;
+    width: 40vw;
 }
 
 .thx {
@@ -27,6 +28,7 @@
 .contactThanksText {
     font-family: "FiraSansRegular";
     line-height: 15px;
+    /* width: 38vw; */
 }
 
 .sidebar {
@@ -54,7 +56,7 @@
     .text {
         text-align: center;
         width: 100vw;
-        padding-bottom: 45vh;
+        /* padding-bottom: 90%; */
     }
 
     .webStrokeContactThx {
