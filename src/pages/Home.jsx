@@ -39,6 +39,9 @@ const Home = () => {
                 <Link to="/letsgo" className={styles.buttongreen}>
                     LOS GEHT'S
                 </Link>
+                {/* <Link to="/letsgo" className={styles.buttongreen} params={poll: poll}>
+                    LOS GEHT'S
+                </Link> */}
             </section>
             {/* ============================== Start of right Area ================================= */}
             <section className={styles.mainsectionright}>

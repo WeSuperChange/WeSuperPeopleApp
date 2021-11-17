@@ -35,7 +35,7 @@ const PollCollection = () => {
         <div className={styles.pollCollection}>
             {pollsReady && (
                 polls.map((e, i) => (
-                    < Poll key={i} question={e.Polls[0].Question} id={e._id} />
+                    <Poll key={i} question={e.Polls[0].Question} id={e._id} />
                 ))
             )}
         </div>
