@@ -33,6 +33,7 @@
     height: 10%;
     background-color: #5d3ede;
     border: 6px solid white;
+    padding-right: 3%;
 }
 
 .logoContact {
@@ -134,6 +135,7 @@ textarea {
     text-decoration: none;
     float: right;
     color: white;
+    font-size: 4rem;
 }
 
 @media only screen and (max-width: 749px) {

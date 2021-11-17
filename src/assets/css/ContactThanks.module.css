@@ -11,11 +11,12 @@
 }
 
 .text {
-    width: 38vw;
+    /* width: 43vw; */
     /* border: 1px solid #3ed7ad; */
-    margin: 0 auto;
-    padding-top: 30vh;
-    padding-bottom: 39.35vh;
+    margin: auto;
+    padding-top: 20%;
+    padding-bottom: 15.4%;
+    width: 40vw;
 }
 
 .thx {
@@ -27,19 +28,48 @@
 .contactThanksText {
     font-family: "FiraSansRegular";
     line-height: 15px;
+    /* width: 38vw; */
 }
 
-.Sidebar {
+.sidebar {
     /* height: 10%; */
     background-color: #5d3ede;
     border: 6px solid white;
     font-size: 4rem;
+    text-align: right;
+    padding-right: 3%;
 
     /* padding-top: 0vh; */
 }
 
 .link {
     text-decoration: none;
-    float: right;
+    /* float: right; */
     color: white;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 749px) {
+    .contactThanks {
+        text-align: center;
+    }
+    .text {
+        text-align: center;
+        width: 100vw;
+        /* padding-bottom: 90%; */
+    }
+
+    .webStrokeContactThx {
+        text-align: center;
+    }
+    .thx {
+        text-align: center;
+        font-size: 2rem;
+        width: 100vw;
+    }
+
+    .contactThanksText {
+        width: 90vw;
+        margin: auto;
+    }
 }
