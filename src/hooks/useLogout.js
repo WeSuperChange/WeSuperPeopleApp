@@ -10,8 +10,6 @@ export const useLogout = () => {
         setError(null)
         signOut(auth)
             .then(() => {
-                // Log out 
-                console.log('user is Logout')
                 dispatch({ type: 'LOGOUT' })
             })
             .catch((error) => {

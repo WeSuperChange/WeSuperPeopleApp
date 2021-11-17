@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import styles from "../assets/css/NewPollCard.module.css";
 import { useAuthContext } from "../hooks/useAuthContext";
+import { Navigate } from "react-router-dom";
 import axios from "axios";
 // const axios = require("axios");
 
@@ -47,7 +48,7 @@ export default function NewQuestion() {
         // console.log("finalAnswerValues", finalAnswerValues);
 
         //create poll object
-        const newPoll = {
+        let newPoll = {
             newPollUser: user.uid,
             newPollCategory: category,
             newPollQuestion: question,
@@ -58,12 +59,21 @@ export default function NewQuestion() {
             ? process.env.REACT_APP_BACKEND_DEBUG
             : process.env.REACT_APP_BACKEND;
 
-        console.log(newPoll)
         axios
-            .post(`${backend}/api/poll`, { newPoll })
+            .post(`${backend}/api/poll`, newPoll)
             .then((res) => {
                 console.log(res);
                 // console.log(res.data);
+                newPoll = null;
+
+                setQuestion("");
+                setCategory("");
+                setAnswer1("");
+                setAnswer2("");
+                setAnswer3("");
+                setAnswer4("");
+
+                //<Navigate to="/new_poll" />
             })
             .catch((error) => {
                 console.log(error.message);
@@ -121,6 +131,7 @@ export default function NewQuestion() {
                         name="answer1"
                         placeholder="Antwort 1"
                         value={answer1}
+                        required
                         onChange={(e) => setAnswer1(e.target.value)}
                     />
                     <input
@@ -129,6 +140,7 @@ export default function NewQuestion() {
                         name="answer2"
                         placeholder="Antwort 2"
                         value={answer2}
+                        required
                         onChange={(e) => setAnswer2(e.target.value)}
                     />
                     <input
@@ -149,11 +161,11 @@ export default function NewQuestion() {
                     />
                 </fieldset>
                 <div className={styles.buttonContainer}>
-                    <input
+                    {/* <input
                         className={styles.buttonblue}
                         type="submit"
                         value="NÄCHSTE"
-                    />
+                    /> */}
                     <input
                         className={styles.buttongreen}
                         type="submit"
