@@ -6,6 +6,7 @@ import Poll from "../components/Poll";
 
 const PollCollection = () => {
     const [polls, setPolls] = useState(new Map());
+    const [pollsReady, setPollsReady] = useState(false)
 
     useEffect(() => {
         let tmpPolls = [];
@@ -20,6 +21,7 @@ const PollCollection = () => {
                     tmpPolls = [...tmpPolls, e]
                 });
                 setPolls([...tmpPolls])
+                setPollsReady(true)
                 //console.log(polls)
 
                 //<Navigate to="/new_poll" />
@@ -31,9 +33,11 @@ const PollCollection = () => {
     }, []);
     return (
         <div className={styles.pollCollection}>
-            {polls.map(e => (
-                < Poll question={e.Polls[0].Question} id={e._id} />
-            ))}
+            {pollsReady && (
+                polls.map(e => (
+                    < Poll question={e.Polls[0].Question} id={e._id} />
+                ))
+            )}
         </div>
     );
 };
