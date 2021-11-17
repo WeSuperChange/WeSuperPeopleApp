@@ -45,8 +45,8 @@ function App() {
                 <Route path="/Results" element={<Results />} exact />
 
                 {/* for the lucky people having an account: create a new poll */}
-                {appReady && <Route path="/new_poll" element={<NewPoll />} exact />}
-                {appReady && <Route path="/own_poll" element={<OwnPoll />} exact />}
+                {user && <Route path="/new_poll" element={<NewPoll />} exact />}
+                {user && <Route path="/own_poll" element={<OwnPoll />} exact />}
 
                 {/* {appReady &&<Route path="/logout" element={<Logout />} exact /> } */}
 
