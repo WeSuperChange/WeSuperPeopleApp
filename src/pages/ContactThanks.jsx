@@ -17,12 +17,11 @@ export default function ContactThanks() {
                 <h1 className={styles.thx}>🎉YEAH <span className={styles.webStrokeContactThx}> THANKS</span>🎉</h1>
                 <p className={styles.contactThanksText}>Deine Anfrage ist mit der Community We Super People geteilt! Wir werden die Nachricht so schnell wie möglich bearbeiten und Dir zurück schreiben ;-)</p>
             </div>
-            <div className="Sidebar">
-                <Link to="/" className="link" >
+            <div className={styles.sidebar}>
+                <Link to="/" className={styles.link}>
                     {"<<"}
                 </Link>
             </div>
-        </div>
-
+        </div >
     )
 }

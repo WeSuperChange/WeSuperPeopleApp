@@ -29,17 +29,45 @@
     line-height: 15px;
 }
 
-.Sidebar {
+.sidebar {
     /* height: 10%; */
     background-color: #5d3ede;
     border: 6px solid white;
     font-size: 4rem;
+    text-align: right;
+    padding-right: 3%;
 
     /* padding-top: 0vh; */
 }
 
 .link {
     text-decoration: none;
-    float: right;
+    /* float: right; */
     color: white;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 749px) {
+    .contactThanks {
+        text-align: center;
+    }
+    .text {
+        text-align: center;
+        width: 100vw;
+        padding-bottom: 45vh;
+    }
+
+    .webStrokeContactThx {
+        text-align: center;
+    }
+    .thx {
+        text-align: center;
+        font-size: 2rem;
+        width: 100vw;
+    }
+
+    .contactThanksText {
+        width: 90vw;
+        margin: auto;
+    }
 }
