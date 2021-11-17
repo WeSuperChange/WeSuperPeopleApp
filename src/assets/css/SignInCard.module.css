@@ -49,7 +49,8 @@
 
 .input {
     font-family: "FiraSansRegular";
-    margin: 2vh;
+    /* margin: 2vh; */
+    margin: 2vh 2vh 2vh 0vh;
     padding-top: 2vh;
     /* padding-right: 14.3vw; */
     padding-bottom: 2vh;
@@ -61,10 +62,11 @@
 }
 
 .lostPassword {
-    font-family: "FiraSansLight";
+    font-family: "FiraSansRegular";
     font-size: 0.8rem;
     color: #2d99ff;
     text-decoration: none;
+    margin-left: 3vh;
 }
 
 .signinButton {
@@ -74,8 +76,8 @@
     color: #3ed7ad;
     border: 2px solid #3ed7ad;
     letter-spacing: 0.2rem;
-    margin-top: 8vh;
-    margin-left: 18vw;
+    margin-top: 14vh;
+    margin-right: 0vw;
 }
 
 .buttonContainer {

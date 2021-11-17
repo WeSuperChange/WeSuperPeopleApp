@@ -32,8 +32,6 @@
 }
 
 .userName, .password {
-    /* padding-left: 1vw; */
-    /* padding-top: 20vh; */
     color: black;
     font-family: "FiraSansRegular";
 }
@@ -44,9 +42,9 @@
 
 .input {
     font-family: "FiraSansRegular";
-    margin: 2vh;
+    /* margin: 2vh; */
+    margin: 2vh 2vh 2vh 0vh;
     padding-top: 2vh;
-    /* padding-right: 14.3vw; */
     padding-bottom: 2vh;
     border-color: #057df6;
     border-radius: 8px;
@@ -56,10 +54,11 @@
 }
 
 .lostPassword {
-    font-family: "FiraSansLight";
+    font-family: "FiraSansRegular";
     font-size: 0.8rem;
     color: #2d99ff;
     text-decoration: none;
+    margin-left: 3vh;
 }
 
 .loginButton {

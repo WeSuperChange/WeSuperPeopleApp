@@ -1,6 +1,6 @@
 import React from "react";
 import ContactSidebar from "../components/ContactSidebar";
-import SuperPeople from "../components/SuperPeople";
+// import SuperPeople from "../components/SuperPeople";
 import QuestionCard from "../components/QuestionCard";
 import { Link } from "react-router-dom";
 import "../assets/css/style.css";
@@ -12,7 +12,18 @@ const Question = () => {
             <ContactSidebar />
             <div className={styles.leftarea}>
                 {/* Question - ToDo: Sidebar goes to app.js */}
-                <SuperPeople />
+                {/* <SuperPeople /> */}
+                <Link to="/">
+                    <img
+                        src="./img/logo_1.png"
+                        alt="We Super People logo"
+                        className={styles.logo}
+                    />
+                </Link>
+                <h1 className={styles.h1}>
+                    We Super
+                    <br /> &nbsp;&nbsp;&nbsp;People
+                </h1>
                 {/* ============================== Start of left Area ================================= */}
                 <h2 className={styles.allVoices}>
                     <span className={styles.webStroke}>

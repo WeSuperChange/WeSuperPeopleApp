@@ -12,11 +12,6 @@
     width: 60vw;
 }
 
-.mainsectionright {
-    display: inline-block;
-    width: 30vw;
-}
-
 .logo {
     width: 65px;
 }
@@ -55,7 +50,48 @@
     background-color: #3ed7ad;
     color: #057df6;
     letter-spacing: 0.2rem;
+    border: 2px solid #057df6;
 }
+
+/* Fabi rechte Seite */
+.mainsectionright {
+    display: inline-block;
+    width: 40vw;
+    height: 100vh;
+    padding: 5%;
+}
+
+.filterNew{
+    margin-top: 10%;
+    display: flex;    
+}
+
+.new{
+    text-decoration: none;
+    padding: 9.5px 20px;
+    background-color: #3ed7ad;
+    color: #057df6;
+    letter-spacing: 0.2rem;
+    border: 2px solid #057df6;
+}
+
+.filter{
+    margin-right: 4%;
+    background-color: #057df6;
+    color: #3ed7ad;
+    border: 2px solid #3ed7ad;
+    letter-spacing: 0.2rem;
+    padding: 5px 2px 5px 45px;
+    font-size:16px;
+    align-self: center;
+}
+
+.filterImage{
+    align-self: center;
+    padding-top: 2%;
+}
+
+
 
 @media only screen and (max-width: 974px) {
     .h1 {

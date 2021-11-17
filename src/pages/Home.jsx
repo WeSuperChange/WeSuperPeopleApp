@@ -42,7 +42,11 @@ const Home = () => {
             </section>
             {/* ============================== Start of right Area ================================= */}
             <section className={styles.mainsectionright}>
-                {user && (<Link to="/new_poll" className={styles.buttongreen}>+NEW</Link>)}
+                <div className={styles.filterNew}>
+                    <input type="text" name="" id="" className={styles.input} />
+                    <button className={styles.filter}>FILTER<img src="./img/Filter.svg" alt="" className={styles.filterImage} /></button>
+                    {user && (<Link to="/new_poll" className={styles.new}>NEU+</Link>)}
+                </div>
                 <PollCollection />
             </section>
         </div>

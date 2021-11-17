@@ -10,7 +10,7 @@
 
 .allVoices {
     width: 24vw;
-    margin-left: 8vw;
+    /* margin-left: 8vw; */
     font-size: 45px;
     color: #3ed7ad;
     margin-top: 2vh;
@@ -35,6 +35,26 @@
     border: 2px solid #3ed7ad;
     letter-spacing: 0.2rem;
     border-radius: 10px;
+}
+
+.logo {
+    width: 65px;
+}
+
+.h1 {
+    font-size: 50px;
+    overflow-wrap: break-word;
+    display: inline-block;
+    line-height: 0.9em;
+    color: #3ed7ad;
+    /* margin-left: 50px; */
+}
+
+.leftarea{
+    display: inline-block;
+    margin: 25vh 5vw 0 5vw;
+    width: 30vw;
+    height: 40vh;
 }
 
 @media only screen and (max-width: 1221px) {
