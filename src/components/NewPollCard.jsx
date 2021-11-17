@@ -168,7 +168,7 @@ export default function NewQuestion() {
                     <input
                         className={styles.buttongreen}
                         type="submit"
-                        value="FERTIG"
+                        value="Speichern"
                     />
                 </div>
             </form>
