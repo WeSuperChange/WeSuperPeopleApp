@@ -1,0 +1,26 @@
+.PollCard {
+    background: center/cover no-repeat url("../img/Poll_WhiteCard.png");
+    /* padding: 10% 10%; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    font-family: "FiraSansRegular";
+    /* margin-right: 10%; */
+    /* border-left: ; */
+    margin-bottom: 8%;
+}
+
+.category {
+    color: white;
+    background-color: #011627;
+    width: 20%;
+    margin-left: 10%;
+}
+
+.question {
+    width: 60%;
+    color: #057df6;
+    padding: 10%;
+    padding-left: 30%;
+    font-size: 0.9em;
+}
