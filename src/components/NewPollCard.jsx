@@ -1,8 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import styles from "../assets/css/NewPollCard.module.css";
+import { useAuthContext } from "../hooks/useAuthContext";
 
 export default function NewQuestion() {
+    const { user, appReady } = useAuthContext();
+
     const [question, setQuestion] = useState("");
     const [answer1, setAnswer1] = useState("");
     const [answer2, setAnswer2] = useState("");
@@ -30,6 +33,9 @@ export default function NewQuestion() {
         if (answer4 !== "") {
             finalAnswerValues.push(answer4);
         }
+
+        const userId = user.uid;
+        console.log("user", user);
         console.log("question", question);
         console.log("finalAnswerValues", finalAnswerValues);
     };
