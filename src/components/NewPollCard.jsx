@@ -2,9 +2,12 @@ import React from "react";
 import { useState } from "react";
 import styles from "../assets/css/NewPollCard.module.css";
 import { useAuthContext } from "../hooks/useAuthContext";
+import axios from "axios";
+// const axios = require("axios");
 
 export default function NewQuestion() {
     const { user, appReady } = useAuthContext();
+    const [error, setError] = useState(null);
 
     const [question, setQuestion] = useState("");
     const [answer1, setAnswer1] = useState("");
@@ -35,9 +38,30 @@ export default function NewQuestion() {
         }
 
         const userId = user.uid;
-        console.log("user", user);
-        console.log("question", question);
-        console.log("finalAnswerValues", finalAnswerValues);
+        // console.log("user", user);
+        // console.log("question", question);
+        // console.log("finalAnswerValues", finalAnswerValues);
+
+        const newPoll = {
+            newPollUser: user.uid,
+            newPollCategory: "",
+            newPollQuestion: question,
+            newPollAnswers: finalAnswerValues,
+        };
+        // console.log("newpoll", newPoll);
+
+        const backend = process.env.REACT_APP_DEBUG
+            ? process.env.REACT_APP_BACKEND_DEBUG
+            : process.env.REACT_APP_BACKEND;
+        axios
+            .post(`${backend}/api/poll`, { newPoll })
+            .then((res) => {
+                console.log(res);
+                // console.log(res.data);
+            })
+            .catch((error) => {
+                setError(error.message);
+            });
     };
 
     return (
