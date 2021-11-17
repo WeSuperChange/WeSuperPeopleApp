@@ -1,10 +1,10 @@
 import React from "react";
 
-const Poll = () => {
+const Poll = (props) => {
     return (
         <div>
-            <h3>Poll question</h3>
-            <h4>Poll answer</h4>
+            <div hidden={true}>{props.id}</div>
+            <h3>{props.question}</h3>
         </div>
     );
 };

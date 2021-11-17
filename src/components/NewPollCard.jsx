@@ -77,6 +77,7 @@ export default function NewQuestion() {
             .catch((error) => {
                 console.log(error.message);
             });
+        return;
     };
 
     return (
