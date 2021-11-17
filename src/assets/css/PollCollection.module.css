@@ -1,7 +1,8 @@
 .pollCollection {
     width: 80%;
-    height: auto;
-    margin: 42% auto 0;
+    height: 85vh;
+    overflow-y: scroll;
+    margin: 5vh auto 0;
 }
 
 @media only screen and (max-width: 749px) {
