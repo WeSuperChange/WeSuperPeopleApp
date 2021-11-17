@@ -1,26 +1,45 @@
 .contactThanks {
     height: 100vh;
     background-color: #3ed7ad;
+    color: #5d3ede;
     text-align: center;
 }
 
 .webStrokeContactThx {
-    -webkit-text-stroke: 2px #3ed7ad;
-    color: #041e37;
+    -webkit-text-stroke: 2px #5d3ede;
+    color: #3ed7ad;
 }
 
 .text {
-    width: 34vw;
+    width: 38vw;
     /* border: 1px solid #3ed7ad; */
     margin: 0 auto;
     padding-top: 30vh;
+    padding-bottom: 39.35vh;
 }
 
 .thx {
-    font-size: 3rem;
-    margin-bottom: 5vh;
+    font-size: 4rem;
+    margin-bottom: 3%;
+    width: 43vw;
 }
 
 .contactThanksText {
     font-family: "FiraSansRegular";
+    line-height: 15px;
+}
+
+.Sidebar {
+    /* height: 10%; */
+    background-color: #5d3ede;
+    border: 6px solid white;
+    font-size: 4rem;
+
+    /* padding-top: 0vh; */
+}
+
+.link {
+    text-decoration: none;
+    float: right;
+    color: white;
 }
