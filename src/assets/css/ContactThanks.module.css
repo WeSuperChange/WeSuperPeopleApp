@@ -3,6 +3,8 @@
     background-color: #3ed7ad;
     color: #5d3ede;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .webStrokeContactThx {
@@ -14,8 +16,8 @@
     /* width: 43vw; */
     /* border: 1px solid #3ed7ad; */
     margin: auto;
-    padding-top: 20%;
-    padding-bottom: 15.4%;
+    /* padding-top: 20%;
+    padding-bottom: 15.4%; */
     width: 40vw;
 }
 
@@ -52,11 +54,15 @@
 @media only screen and (max-width: 749px) {
     .contactThanks {
         text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .text {
         text-align: center;
         width: 100vw;
-        /* padding-bottom: 90%; */
+        margin-top: 20vh;
     }
 
     .webStrokeContactThx {
@@ -66,10 +72,16 @@
         text-align: center;
         font-size: 2rem;
         width: 100vw;
+        padding-bottom: 20px;
     }
 
     .contactThanksText {
         width: 90vw;
         margin: auto;
+    }
+
+    .sidebar {
+        align-self: flex-end;
+        width: 100vw;
     }
 }
