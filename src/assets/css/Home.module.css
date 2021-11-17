@@ -73,24 +73,41 @@
     color: #057df6;
     letter-spacing: 0.2rem;
     border: 2px solid #057df6;
+    margin-left: 4%;
 }
 
 .filter{
-    margin-right: 4%;
+    display: flex;
+    align-items: center;
     background-color: #057df6;
     color: #3ed7ad;
     border: 2px solid #3ed7ad;
+    padding-left: 10%;
+    
+}
+
+.filtertext{
     letter-spacing: 0.2rem;
-    padding: 5px 2px 5px 45px;
-    font-size:16px;
-    align-self: center;
+    font-size: 16px;
 }
 
 .filterImage{
-    align-self: center;
-    padding-top: 2%;
+    background-color: #057df6;
+    padding-left:5px;
+    padding-right:5px;
 }
 
+.input{
+    width: 17vw;
+    background-color: #057df6;
+    border: 2px solid #3ed7ad;
+}
+
+::placeholder{
+    text-align: center;
+    font-size: 16px;
+    color: rgba(62,215,173, 0.6);
+}
 
 
 @media only screen and (max-width: 974px) {
