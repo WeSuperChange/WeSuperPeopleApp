@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 .allNewPollCard {
     background: center/cover no-repeat url("../img/LoginCard.png");
     /* height: 80vh; */
@@ -16,8 +15,7 @@
     flex-direction: column;
 }
 
-.fieldsetOne,
-.fieldsetTwo {
+.fieldsetOne, .fieldsetTwo {
     border-color: #057df6;
     border-radius: 8px;
     height: auto;
@@ -26,15 +24,14 @@
 }
 
 .fieldsetOne {
-    margin-bottom: 6vh;
+    margin-bottom: 3vh;
 }
 
 .fieldsetTwo {
     margin-bottom: 1vh;
 }
 
-.frage,
-.antwort {
+.frage, .antwort {
     /* padding-left: 1vw; */
     /* padding-top: 20vh; */
     color: black;
@@ -89,7 +86,6 @@
         width: 90vw;
         margin: 0 5vw 0 7vw;
     }
-
     .form {
         width: auto;
         margin: 0 2vw;

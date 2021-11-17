@@ -9,7 +9,6 @@ function reducer(state, action) {
         case 'LOGIN':
             return { ...state, user: action.payload }
         case 'LOGOUT':
-            console.log(action)
             return { ...state, user: null }
         case 'CHECK_IF_READY':
             return { ...state, user: action.payload, appReady: true }

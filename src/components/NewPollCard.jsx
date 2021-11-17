@@ -6,10 +6,12 @@ import axios from "axios";
 // const axios = require("axios");
 
 export default function NewQuestion() {
-    const { user, appReady } = useAuthContext();
-    const [error, setError] = useState(null);
+    const { user } = useAuthContext();
+    //const [error, setError] = useState(null);
 
+    //set stats for input fields
     const [question, setQuestion] = useState("");
+    const [category, setCategory] = useState("");
     const [answer1, setAnswer1] = useState("");
     const [answer2, setAnswer2] = useState("");
     const [answer3, setAnswer3] = useState("");
@@ -17,17 +19,20 @@ export default function NewQuestion() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setQuestion("");
-        setAnswer1("");
-        setAnswer2("");
-        setAnswer3("");
-        setAnswer4("");
+        /*         setQuestion("");
+                setAnswer1("");
+                setAnswer2("");
+                setAnswer3("");
+                setAnswer4(""); */
 
+        //check if answers filled
         const finalAnswerValues = [];
         if (answer1 !== "") {
+            //TODO: set error if emtpy
             finalAnswerValues.push(answer1);
         }
         if (answer2 !== "") {
+            //TODO: set error if emtpy
             finalAnswerValues.push(answer2);
         }
         if (answer3 !== "") {
@@ -37,22 +42,23 @@ export default function NewQuestion() {
             finalAnswerValues.push(answer4);
         }
 
-        const userId = user.uid;
         // console.log("user", user);
         // console.log("question", question);
         // console.log("finalAnswerValues", finalAnswerValues);
 
+        //create poll object
         const newPoll = {
             newPollUser: user.uid,
-            newPollCategory: "",
+            newPollCategory: category,
             newPollQuestion: question,
-            newPollAnswers: finalAnswerValues,
+            newPollAnswers: [...finalAnswerValues],
         };
-        // console.log("newpoll", newPoll);
 
         const backend = process.env.REACT_APP_DEBUG
             ? process.env.REACT_APP_BACKEND_DEBUG
             : process.env.REACT_APP_BACKEND;
+
+        console.log(newPoll)
         axios
             .post(`${backend}/api/poll`, { newPoll })
             .then((res) => {
@@ -60,7 +66,7 @@ export default function NewQuestion() {
                 // console.log(res.data);
             })
             .catch((error) => {
-                setError(error.message);
+                console.log(error.message);
             });
     };
 
@@ -68,7 +74,7 @@ export default function NewQuestion() {
         <div className={styles.allNewPollCard}>
             <form action="" className={styles.form} onSubmit={handleSubmit}>
                 <fieldset className={styles.fieldsetOne}>
-                    <label htmlFor="User" className={styles.frage}>
+                    <label htmlFor="question" className={styles.frage}>
                         Frage
                         <span className={styles.star}>
                             {" "}
@@ -85,7 +91,24 @@ export default function NewQuestion() {
                     />
                 </fieldset>
                 <fieldset className={styles.fieldsetTwo}>
-                    <label htmlFor="Passwort" className={styles.antwort}>
+                    <label htmlFor="category" className={styles.antwort}>
+                        Kategorie
+                        <span className={styles.star}>
+                            {" "}
+                            &nbsp;* <br />
+                        </span>
+                    </label>
+                    <input
+                        className={styles.input}
+                        type="text"
+                        name="category"
+                        placeholder="Kategorie"
+                        value={category}
+                        onChange={(e) => setCategory(e.target.value)}
+                    />
+                </fieldset>
+                <fieldset className={styles.fieldsetTwo}>
+                    <label htmlFor="answers" className={styles.antwort}>
                         Antwort
                         <span className={styles.star}>
                             {" "}
