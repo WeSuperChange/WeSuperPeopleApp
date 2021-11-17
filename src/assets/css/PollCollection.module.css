@@ -1,5 +1,13 @@
-.pollCollection{
+.pollCollection {
     width: 80%;
-    height: 60%;
+    height: auto;
     margin: 42% auto 0;
+}
+
+@media only screen and (max-width: 749px) {
+    .pollCollection {
+        width: 80%;
+        height: auto;
+        margin: 5vh auto;
+    }
 }

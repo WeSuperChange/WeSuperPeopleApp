@@ -2,13 +2,14 @@
     background: #041e37 bottom right/contain no-repeat url("../img/erde_1.png");
     color: #3ed7ad;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
 }
 
 .mainsectionleft {
     display: inline-block;
-    margin: 0 10vw 0 5vw;
+    margin: 0 1vw 0 5vw;
     width: 60vw;
 }
 
@@ -53,20 +54,24 @@
     border: 2px solid #057df6;
 }
 
-/* Fabi rechte Seite */
+/* Rechte Seite */
 .mainsectionright {
     display: inline-block;
     width: 40vw;
     height: 100vh;
-    padding: 5%;
+    /* padding: 5%; */
 }
 
-.filterNew{
-    margin-top: 10%;
-    display: flex;    
+/* Fabi Filter */
+.filterNew {
+    margin-top: 5vh;
+    margin-right: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
-.new{
+.new {
     text-decoration: none;
     padding: 9.5px 20px;
     background-color: #3ed7ad;
@@ -76,39 +81,37 @@
     margin-left: 4%;
 }
 
-.filter{
+.filter {
     display: flex;
     align-items: center;
     background-color: #057df6;
     color: #3ed7ad;
     border: 2px solid #3ed7ad;
     padding-left: 10%;
-    
 }
 
-.filtertext{
+.filtertext {
     letter-spacing: 0.2rem;
     font-size: 16px;
 }
 
-.filterImage{
+.filterImage {
     background-color: #057df6;
-    padding-left:5px;
-    padding-right:5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
-.input{
+.input {
     width: 17vw;
     background-color: #057df6;
     border: 2px solid #3ed7ad;
 }
 
-::placeholder{
+::placeholder {
     text-align: center;
     font-size: 16px;
-    color: rgba(62,215,173, 0.6);
+    color: rgba(62, 215, 173, 0.6);
 }
-
 
 @media only screen and (max-width: 974px) {
     .h1 {
@@ -145,6 +148,7 @@
 @media only screen and (max-width: 749px) {
     .parent {
         flex-wrap: wrap;
+        height: auto;
     }
 
     .mainsectionleft {
@@ -156,8 +160,16 @@
 
     .mainsectionright {
         display: block;
-        width: 80vw;
+        height: auto;
+        width: 85vw;
         padding-left: 60px;
+    }
+
+    .filterNew {
+        margin-top: 5vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 }
 

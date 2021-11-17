@@ -54,6 +54,7 @@
             url("../img/LillaVector1.png");
         background-color: #041e37;
         align-items: center;
+        height: 100vh;
     }
     .mainsectionleft {
         margin: auto;
@@ -71,8 +72,8 @@
 
 @media only screen and (max-width: 465px) {
     .mainsectionleft {
-        height: 40vh;
-        margin: 0 0 0 60px;
+        width: 100vw;
+        margin: 0;
     }
 
     .mainsectionright {
