@@ -18,7 +18,8 @@ export const useLogin = () => {
 
                 if (!user.emailVerified) {
                     //set error = email not verified
-                    setError("E-Mail wurde noch nicht bestätigt!")
+                    setError("E-Mail wurde noch nicht bestätigt!");
+                    return;
                 }
                 dispatch({ type: 'LOGIN', payload: user })
                 navigate('/')
