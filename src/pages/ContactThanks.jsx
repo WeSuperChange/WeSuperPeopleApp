@@ -1,8 +1,14 @@
 import React from 'react'
+import { useState } from "react";
+import { Navigate } from "react-router-dom";
 import styles from "../assets/css/ContactThanks.module.css"
 
 export default function ContactThanks() {
-    return (
+    const [redirectNow, setRedirectNow] = useState(false);
+    setTimeout(() => setRedirectNow(true), 3000);
+    return redirectNow ? (
+        <Navigate to="/" />
+    ) : (
         <div className={styles.contactThanks}>
             <div className={styles.text}>
                 <h1 className={styles.thx}>YEAH <span className={styles.webStrokeContactThx}> THANKS</span></h1>
