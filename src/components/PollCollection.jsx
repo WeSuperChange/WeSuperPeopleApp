@@ -22,13 +22,15 @@ const PollCollection = () => {
                 setPolls([...tmpPolls]);
                 setPollsReady(true);
                 // console.log(polls);
+                console.log("pollsReady", pollsReady);
+                console.log("polls", polls);
 
                 //<Navigate to="/new_poll" />
             })
             .catch((error) => {
                 console.log(error.message);
             });
-    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+    }, []);
     return (
         <div className={styles.pollCollection}>
             {pollsReady &&
