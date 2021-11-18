@@ -9,7 +9,7 @@ export default function Poll(props) {
 
     return (
         <div
-            onClick={() => setQuestionGo(questionGo + props.eprops)}
+            onClick={() => setQuestionGo(props.eprops)}
             className={styles.PollCard}
         >
             <div hidden={true}>{props.id}</div>
