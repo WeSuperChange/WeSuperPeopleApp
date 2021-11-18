@@ -1,6 +1,6 @@
 import React from "react";
-import axios from "axios";
-import { useEffect, useState, useContext } from "react";
+//import axios from "axios";
+import { useContext } from "react";
 import styles from "../assets/css/PollCollection.module.css";
 import Poll from "../components/Poll";
 import { questionContext } from '../context/questionContext'

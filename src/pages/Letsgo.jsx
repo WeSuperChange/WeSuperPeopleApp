@@ -1,12 +1,12 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import ContactSidebar from "../components/ContactSidebar";
 import "../assets/css/style.css";
 import styles from "../assets/css/Letsgo.module.css";
-import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { questionContext } from '../context/questionContext'
 export default function Letsgo() {
     let idElt = useParams().id
-    const [title, setTitle] = useState(null);
+    //const [title, setTitle] = useState(null);
     let { polls } = useContext(questionContext)
     let one = polls.filter(elt => elt._id === idElt)
     console.log(one[0].Polls[0].Question)
