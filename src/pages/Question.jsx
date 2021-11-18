@@ -67,8 +67,8 @@ const Question = () => {
                 {pollReady &&
                     <QuestionCard poll={poll} />
                 }
-                <button className={styles.skip} onClick={handleSkip}>SKIP {">>"}</button>
-                <button className={styles.skip} onClick={handleNext}>NEXT {">>"}</button>
+                <Link to="" className={styles.skip} onClick={handleSkip}>SKIP {">>"}</Link>
+                <Link to="" className={styles.skip} onClick={handleNext}>NEXT {">>"}</Link>
             </div>
         </div>
     );
