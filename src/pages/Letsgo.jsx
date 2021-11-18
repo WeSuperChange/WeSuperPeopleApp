@@ -5,6 +5,7 @@ import styles from "../assets/css/Letsgo.module.css";
 import { Link } from "react-router-dom";
 
 export default function Letsgo() {
+    // const { poll } = useParams();
     return (
         <div className={styles.allLetsgo}>
             <ContactSidebar />
@@ -32,6 +33,9 @@ export default function Letsgo() {
                 <Link to="/question" className={styles.start}>
                     Start
                 </Link>
+                {/* <Link to="/question" className={styles.start} params={poll :poll}>
+                    Start
+                </Link> */}
                 <p>
                     <span className={styles.press}>press</span> Enter
                 </p>

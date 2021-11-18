@@ -1,12 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import ContactSidebar from "../components/ContactSidebar";
 // import SuperPeople from "../components/SuperPeople";
 import QuestionCard from "../components/QuestionCard";
 import { Link } from "react-router-dom";
+import axios from 'axios'
 import "../assets/css/style.css";
 import styles from "../assets/css/Question.module.css";
 
 const Question = () => {
+
+    //console.log(useParams())
+
+    /* if (Object.keys(props.poll).length === 0) {
+        // if empty
+      } else {
+        // setPoll(useParams());
+      } */
+    const [poll, setPoll] = useState({})
+    const [pollReady, setPollReady] = useState(false)
+
+    const handleSkip = () => {
+        const backend = process.env.REACT_APP_DEBUG
+            ? process.env.REACT_APP_BACKEND_DEBUG
+            : process.env.REACT_APP_BACKEND;
+        axios
+            .get(`${backend}/api/poll/rnd`)
+            .then((res) => {
+                setPoll(res.data.data)
+                setPollReady(true)
+            })
+            .catch((error) => {
+                console.log(error.message);
+            });
+    }
+    const handleNext = () => {
+        // update poll set count+1
+        console.log("next")
+    }
     return (
         <div className={styles.allQuestion}>
             <ContactSidebar />
@@ -34,13 +64,11 @@ const Question = () => {
             </div>
             {/* ============================== Start of right Area ================================= */}
             <div className={styles.rightarea}>
-                <QuestionCard />
-                <Link to="/question" className={styles.skip}>
-                    SKIP {">>"}
-                </Link>
-                <Link to="/question" className={styles.skip}>
-                    NEXT {">>"}
-                </Link>
+                {pollReady &&
+                    <QuestionCard poll={poll} />
+                }
+                <Link to="" className={styles.skip} onClick={handleSkip}>SKIP {">>"}</Link>
+                <Link to="" className={styles.skip} onClick={handleNext}>NEXT {">>"}</Link>
             </div>
         </div>
     );

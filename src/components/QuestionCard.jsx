@@ -3,17 +3,18 @@ import "../assets/css/style.css";
 import styles from "../assets/css/QuestionCard.module.css";
 import QuestionCardAnswer from "./QuestionCardAnswer";
 
-const QuestionCard = () => {
+const QuestionCard = (props) => {
+    const poll = props.poll;
+
     return (
         <div className={styles.allQuestionCard}>
             <h3 className={styles.question}>
-                Do you believe the climate is changing?
+                {poll.Polls[0].Question}
             </h3>
             <div className={styles.answers}>
-                <QuestionCardAnswer id="1" answer={"text"} />
-                <QuestionCardAnswer id="2" answer={"text"} />
-                <QuestionCardAnswer id="3" answer={"text"} />
-                <QuestionCardAnswer id="4" answer={"text"} />
+                {poll.Polls[0].PollAnswers.map((e, i) =>
+                    <QuestionCardAnswer key={i} id={i} answer={e.AnswerText} />
+                )}
             </div>
         </div>
     );
