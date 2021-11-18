@@ -4,7 +4,9 @@
     align-items: center;
     cursor: pointer;
     font-family: "MontserratMedium";
-    /* padding: 5px 0px; */
+
+    /* Klaus: sieht schoener aus 😉 */
+    padding: 5px 15px 5px 0;
 }
 
 /* eigentlicher radio button */
@@ -30,9 +32,11 @@
     background: #3ed7ad;
     border-radius: 50%;
 
+    /* if the radiobutton on the same level is unchecked hide .radio__radio box by scaling it to size 0 */
     transform: scale(0);
 }
 
+/* if the radiobutton on the same level is checked scale .radio__radio box to size 1 */
 .radio__input:checked + .radio__radio::after {
     transform: scale(1);
 }
