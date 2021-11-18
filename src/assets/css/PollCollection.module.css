@@ -3,6 +3,12 @@
     height: 85vh;
     overflow-y: scroll;
     margin: 5vh auto 0;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.pollCollection::-webkit-scrollbar {
+    display: none;
 }
 
 @media only screen and (max-width: 749px) {

@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .allLoginCard {
     background: center/cover no-repeat url("../img/LoginCard.png");
-    /* height: 80vh; */
     width: 30vw;
     border-radius: 10px;
     padding-top: 5vh;
-    /* margin-left: 5vw; */
 }
 
 .form {
@@ -70,7 +68,7 @@
     color: #3ed7ad;
     border: 2px solid #3ed7ad;
     letter-spacing: 0.2rem;
-    margin-top: 14vh;
+    margin: 40% 0;
 }
 
 .buttonContainer {

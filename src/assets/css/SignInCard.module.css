@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .allSigninCard {
     background: center/cover no-repeat url("../img/LoginCard.png");
-    height: 80vh;
+    height: 75vh;
     width: 30vw;
     border-radius: 10px;
     padding-top: 5vh;
-    margin-left: 5vw;
+    /* margin-left: 5vw; */
 }
 
 .form {
@@ -15,7 +15,9 @@
     flex-direction: column;
 }
 
-.fieldsetOne, .fieldsetTwo, .fieldsetThree {
+.fieldsetOne,
+.fieldsetTwo,
+.fieldsetThree {
     border-color: #057df6;
     border-radius: 8px;
     height: 13.5vh;
@@ -36,7 +38,8 @@
 
 } */
 
-.userName, .password {
+.userName,
+.password {
     /* padding-left: 1vw; */
     /* padding-top: 20vh; */
     color: black;
@@ -82,6 +85,7 @@
 
 .buttonContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 

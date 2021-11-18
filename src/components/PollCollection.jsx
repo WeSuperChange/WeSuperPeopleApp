@@ -36,6 +36,7 @@ const PollCollection = () => {
             {pollsReady &&
                 polls.map((e, i) => (
                     <Poll
+                        eprops={e}
                         key={i}
                         category={e.Polls[0].Category}
                         question={e.Polls[0].Question}
