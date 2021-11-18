@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import ContactSidebar from "../components/ContactSidebar";
 // import SuperPeople from "../components/SuperPeople";
 import QuestionCard from "../components/QuestionCard";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import axios from 'axios'
 import "../assets/css/style.css";
 import styles from "../assets/css/Question.module.css";
@@ -11,6 +11,7 @@ import { questionContext } from '../context/questionContext'
 const Question = () => {
     let idElt = useParams().id
     console.log(idElt)
+    const navigate = useNavigate();
     let { polls } = useContext(questionContext)
     //const location = useLocation();
     console.log(polls)
@@ -28,8 +29,8 @@ const Question = () => {
         axios
             .get(`${backend}/api/poll/rnd`)
             .then((res) => {
-                one = res.data.data
-                //setPollReady(true)
+                console.log(res.data.data._id)
+                navigate(`/question/${res.data.data._id}`);
             })
             .catch((error) => {
                 console.log(error.message);
