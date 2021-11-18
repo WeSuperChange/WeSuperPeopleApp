@@ -11,15 +11,19 @@ import { questionContext } from "../context/questionContext";
 const Question = () => {
     let idElt = useParams().id;
     console.log(idElt);
+
     let { polls } = useContext(questionContext);
+
     //const location = useLocation();
     console.log(polls);
     //const [pollReady, setPollReady] = useState(false)
     //const [poll, setPoll] = useState(null)
     //console.log(location.state.questionGo)
     //setPoll(location.state.questionGo)
+
     let one = polls.filter((elt) => elt._id === idElt);
     console.log(one);
+
     // setPoll(one[0])
     const handleSkip = () => {
         const backend = process.env.REACT_APP_DEBUG
@@ -35,10 +39,12 @@ const Question = () => {
                 console.log(error.message);
             });
     };
+
     /* const handleNext = () => {
         // update poll set count+1
         console.log("next")
     } */
+
     return (
         <div className={styles.allQuestion}>
             <ContactSidebar />
@@ -67,7 +73,12 @@ const Question = () => {
             {/* ============================== Start of right Area ================================= */}
             <div className={styles.rightarea}>
                 {one && <QuestionCard poll={one[0]} />}
-                <Link to="" className={styles.skip} onClick={handleSkip}>
+                <Link
+                    // to={`/letsgo/${next.poll[0].id}`}
+                    to=""
+                    className={styles.skip}
+                    onClick={handleSkip}
+                >
                     SKIP {">>"}
                 </Link>
                 {/* <Link to="" className={styles.skip} onClick={handleNext}>NEXT {">>"}</Link> */}

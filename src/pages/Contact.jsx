@@ -111,7 +111,8 @@ export default function Contact() {
 
             <div className="Sidebar">
                 <Link to="/" className="link">
-                    {"<<"}
+                    {/* {"<<«»  <<"} */}
+                    {"«"}
                 </Link>
             </div>
         </section>
