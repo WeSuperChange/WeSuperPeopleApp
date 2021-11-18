@@ -15,7 +15,6 @@
     font-size: 30px;
     margin-bottom: 5vh;
     padding-left: 10vh;
-    
 }
 
 .answers {
@@ -29,4 +28,13 @@
 
 .answerTwo {
     border-bottom: 1px solid #057df6;
+}
+
+@media only screen and (max-width: 1221px) {
+    .question {
+        padding-left: unset;
+    }
+    .answers {
+        margin-left: unset;
+    }
 }
