@@ -3,23 +3,23 @@ import ContactSidebar from "../components/ContactSidebar";
 // import SuperPeople from "../components/SuperPeople";
 import QuestionCard from "../components/QuestionCard";
 import { Link, useParams } from "react-router-dom";
-import axios from 'axios'
+import axios from "axios";
 import "../assets/css/style.css";
 import styles from "../assets/css/Question.module.css";
-import { questionContext } from '../context/questionContext'
+import { questionContext } from "../context/questionContext";
 
 const Question = () => {
-    let idElt = useParams().id
-    console.log(idElt)
-    let { polls } = useContext(questionContext)
+    let idElt = useParams().id;
+    console.log(idElt);
+    let { polls } = useContext(questionContext);
     //const location = useLocation();
-    console.log(polls)
+    console.log(polls);
     //const [pollReady, setPollReady] = useState(false)
     //const [poll, setPoll] = useState(null)
     //console.log(location.state.questionGo)
     //setPoll(location.state.questionGo)
-    let one = polls.filter(elt => elt._id === idElt)
-    console.log(one)
+    let one = polls.filter((elt) => elt._id === idElt);
+    console.log(one);
     // setPoll(one[0])
     const handleSkip = () => {
         const backend = process.env.REACT_APP_DEBUG
@@ -28,13 +28,13 @@ const Question = () => {
         axios
             .get(`${backend}/api/poll/rnd`)
             .then((res) => {
-                one = res.data.data
+                one = res.data.data;
                 //setPollReady(true)
             })
             .catch((error) => {
                 console.log(error.message);
             });
-    }
+    };
     /* const handleNext = () => {
         // update poll set count+1
         console.log("next")
@@ -47,7 +47,7 @@ const Question = () => {
                 {/* <SuperPeople /> */}
                 <Link to="/">
                     <img
-                        src="./img/logo_1.png"
+                        src="/img/logo_1.png"
                         alt="We Super People logo"
                         className={styles.logo}
                     />
@@ -66,10 +66,10 @@ const Question = () => {
             </div>
             {/* ============================== Start of right Area ================================= */}
             <div className={styles.rightarea}>
-                {one &&
-                    <QuestionCard poll={one[0]} />
-                }
-                <Link to="" className={styles.skip} onClick={handleSkip}>SKIP {">>"}</Link>
+                {one && <QuestionCard poll={one[0]} />}
+                <Link to="" className={styles.skip} onClick={handleSkip}>
+                    SKIP {">>"}
+                </Link>
                 {/* <Link to="" className={styles.skip} onClick={handleNext}>NEXT {">>"}</Link> */}
             </div>
         </div>
