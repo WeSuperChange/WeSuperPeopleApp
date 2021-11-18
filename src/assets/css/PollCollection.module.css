@@ -14,7 +14,7 @@
 @media only screen and (max-width: 749px) {
     .pollCollection {
         width: 80%;
-        height: auto;
+        height: 50vh;
         margin: 5vh auto;
     }
 }

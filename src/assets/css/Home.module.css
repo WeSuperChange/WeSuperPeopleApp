@@ -11,7 +11,7 @@
 .mainsectionleft {
     display: inline-block;
     margin: 0 1vw 0 5vw;
-    width: 60vw;
+    width: 54vw;
 }
 
 .logo {
@@ -63,7 +63,7 @@
     /* padding: 5%; */
 }
 
-/* Fabi Filter */
+/* Filter Leiste */
 .filterNew {
     margin-top: 5vh;
     margin-right: 5vh;

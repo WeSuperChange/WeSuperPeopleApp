@@ -1,20 +1,17 @@
 .PollCard {
     background: center/cover no-repeat url("../img/Poll_WhiteCard.png");
-    /* padding: 10% 10%; */
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     font-family: "FiraSansRegular";
-    /* margin-right: 10%; */
-    /* border-left: ; */
     margin-bottom: 8%;
+    border-radius: 10px;
 }
 
 .category {
     color: white;
     background-color: #011627;
-    width: 20%;
-    margin-left: 10%;
+    width: 15%;
+    text-align: center;
 }
 
 .question {
@@ -24,3 +21,13 @@
     padding-left: 30%;
     font-size: 0.9em;
 }
+
+.arrows{
+    width: 30px;
+    margin-left: auto;
+    /* margin-bottom: 5px;
+    margin-right: 5px; */
+}
+
+/* Karte größer werden */
+/* transform scale */
