@@ -11,12 +11,8 @@ const QuestionCardAnswer = (props) => {
                     id={"myRadioID" + props.id}
                     className={styles.radio__input}
                 />
-                {props.answer}
-                <div className={styles.radio__radio}>
-                    {/* .radio__radio::after */}
-                </div>
-
-
+                <div className={styles.answer}>{props.answer}</div>
+                <div className={styles.radio__radio}></div>
             </label>
         </div>
     );

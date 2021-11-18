@@ -1,8 +1,8 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import ContactSidebar from "../components/ContactSidebar";
 // import SuperPeople from "../components/SuperPeople";
 import QuestionCard from "../components/QuestionCard";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import axios from 'axios'
 import "../assets/css/style.css";
 import styles from "../assets/css/Question.module.css";
