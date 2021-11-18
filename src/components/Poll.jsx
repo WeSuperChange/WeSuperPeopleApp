@@ -15,9 +15,9 @@ export default function Poll(props) {
             <div hidden={true}>{props.id}</div>
             <div className={styles.category}>{props.category}</div>
             <h3 className={styles.question}>{props.question}</h3>
-            {/* <Link to="/results" className={styles.arrows}> */}
-            <img src="./img/arrows.png" alt="" className={styles.arrows} />
-            {/* </Link> */}
+            <Link to="/results" className={styles.link}>
+                <img src="./img/arrows.png" alt="" className={styles.arrows} />
+            </Link>
         </div>
 
     );
