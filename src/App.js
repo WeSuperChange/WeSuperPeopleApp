@@ -38,11 +38,11 @@ function App() {
                     <Route path="/contact_thanks" element={<ContactThanks />} exact />
 
                     {/* public area: questions and  answers */}
-                    <Route path="/letsgo" element={<Letsgo />} exact />
+                    <Route path="/letsgo/:id" element={<Letsgo />} exact />
                     <Route path="/home_poll" element={<HomePoll />} exact />
-                    <Route path="/question" element={<Question />} exact />
+                    <Route path="/question/:id" element={<Question />} exact />
                     <Route path="/poll_thanks" element={<PollThanks exact />} />
-                    <Route path="/Results" element={<Results />} exact />
+                    <Route path="/results" element={<Results />} exact />
 
                     {/* for the lucky people having an account: create a new poll */}
                     {user && <Route path="/new_poll" element={<NewPoll />} exact />}

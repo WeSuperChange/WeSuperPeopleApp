@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import ContactSidebar from "../components/ContactSidebar";
 import "../assets/css/style.css";
 import styles from "../assets/css/Letsgo.module.css";
-import { Link } from "react-router-dom";
-
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import { questionContext } from '../context/questionContext'
 export default function Letsgo() {
-    // const { poll } = useParams();
+    let idElt = useParams().id
+    const [title, setTitle] = useState(null);
+    let { polls } = useContext(questionContext)
+    let one = polls.filter(elt => elt._id === idElt)
+    console.log(one[0].Polls[0].Question)
+    /*     const location = useLocation();
+        const navigate = useNavigate();
+    
+        console.log(location.state.questionGo)
+    
+        const [questionGo, setQuestionGo] = useState({})
+        setQuestionGo(location.state.questionGo)
+    
+        const toQuestion = () => {
+            navigate('/question', { state: { questionGo } });
+        } */
+    console.log(useParams())
     return (
         <div className={styles.allLetsgo}>
             <ContactSidebar />
@@ -25,17 +41,15 @@ export default function Letsgo() {
                     Gedanken mit der Community zu teilen?!
                 </p>
                 <p className={styles.pollquestion}>
-                    Poll question placeholder??
+                    {/* {location.state.questionGo.Polls[0].Question} */}
+                    {one[0].Polls[0].Question}
                 </p>
             </div>
             {/* ============================== Start of right Area ================================= */}
             <div className={styles.startEnter}>
-                <Link to="/question" className={styles.start}>
+                <Link to={`/question/${idElt}`} /* onClick={() => toQuestion()} */ className={styles.start}>
                     Start
                 </Link>
-                {/* <Link to="/question" className={styles.start} params={poll :poll}>
-                    Start
-                </Link> */}
                 <p>
                     <span className={styles.press}>press</span> Enter
                 </p>

@@ -4,6 +4,7 @@ import styles from "../assets/css/QuestionCard.module.css";
 import QuestionCardAnswer from "./QuestionCardAnswer";
 
 const QuestionCard = (props) => {
+    console.log(props)
     const poll = props.poll;
 
     return (

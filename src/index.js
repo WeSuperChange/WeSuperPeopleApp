@@ -9,11 +9,13 @@ import './assets/fonts/FiraSans-Regular.ttf';
 import './assets/fonts/Montserrat-Medium.ttf';
 import './assets/fonts/Montserrat-SemiBold.ttf';
 import { AuthContextProvider } from './context/AuthContext';
-
+import QuestionContextProvider from './context/questionContext';
 ReactDOM.render(
     <React.StrictMode>
         <AuthContextProvider>
-            <App />
+            <QuestionContextProvider>
+                <App />
+            </QuestionContextProvider>
         </AuthContextProvider>
     </React.StrictMode>,
     document.getElementById('root')

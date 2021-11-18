@@ -36,10 +36,7 @@ const Home = () => {
                     <Link to="/" className={styles.buttonblue} onClick={logout}>
                         LOG OUT
                     </Link>)}
-                <Link to="/letsgo" className={styles.buttongreen}>
-                    LOS GEHT'S
-                </Link>
-                {/* <Link to="/letsgo" className={styles.buttongreen} params={poll: poll}>
+                {/* <Link to="/letsgo" className={styles.buttongreen}>
                     LOS GEHT'S
                 </Link> */}
             </section>
