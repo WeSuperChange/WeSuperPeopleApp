@@ -2,7 +2,7 @@ import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/
 import { auth } from '../firebase/config'
 import { useState } from 'react';
 import { useAuthContext } from "./useAuthContext";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 
 import axios from 'axios';
 
@@ -10,7 +10,7 @@ export const useSignup = () => {
     //init error and auth context
     const [error, setError] = useState(null);
     const { dispatch } = useAuthContext();
-    let navigate = useNavigate();
+    //let navigate = useNavigate();
 
     const signup = (email, password) => {
         //reset error
@@ -33,7 +33,7 @@ export const useSignup = () => {
                     });
 
                 dispatch({ type: 'LOGIN', payload: userCredential.user });
-                navigate('/login');
+                //navigate('/login');
             })
             .catch((error) => {
                 setError(error.message);

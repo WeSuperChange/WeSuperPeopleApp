@@ -11,12 +11,19 @@ export default function SignInCard() {
     const [password, setPassword] = useState('');
     const [confirmPassword, setconfirmedPassword] = useState('');
     const { error, signup } = useSignup()
+    const [errorPassword, setErrorPassword] = useState('');
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if (password !== confirmPassword) {
-            //error
+            setErrorPassword("");
+            setErrorPassword("Passwörter stimmen nicht überein.");
         } else {
             signup(email, password)
+            setErrorPassword("");
+            if (error === null) {
+                setErrorPassword("Erfolgreich Registriert, bitte Bestätige deine E-Mail.");
+            }
         }
     }
 
@@ -25,7 +32,7 @@ export default function SignInCard() {
             <form action="" className={styles.form} onSubmit={handleSubmit}>
                 <fieldset className={styles.fieldsetOne}>
                     <label htmlFor="User" className={styles.userName}>Email
-                        <span className={styles.star}> &nbsp;* <br /></span>
+                        <span className={styles.star}> &nbsp; * <br /></span>
                     </label>
                     <input
                         className={styles.input}
@@ -38,7 +45,7 @@ export default function SignInCard() {
                 </fieldset>
                 <fieldset className={styles.fieldsetTwo}>
                     <label htmlFor="Passwort" className={styles.password}>Passwort
-                        <span className={styles.star}> &nbsp;* <br /></span>
+                        <span className={styles.star}> &nbsp; * <br /></span>
                     </label>
                     <input
                         className={styles.input}
@@ -49,7 +56,7 @@ export default function SignInCard() {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                     <label htmlFor="PasswortZwei" className={styles.password}>Passwort wiederholen
-                        <span className={styles.star}> &nbsp;* <br /></span>
+                        <span className={styles.star}> &nbsp; * <br /></span>
                     </label>
                     <input
                         className={styles.input}
@@ -86,8 +93,9 @@ export default function SignInCard() {
                     </div>
                 </div>
                 {error && <p>{error}</p>}
-            </form>
-        </div>
+                {errorPassword && <p>{errorPassword}</p>}
+            </form >
+        </div >
     )
 }
 
